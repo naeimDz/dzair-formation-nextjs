@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "courses": "Courses",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Algeria Academy for Heavy Equipment Operators Training",
+    "subtitle": "From Simulation to Professionalism",
+    "description": "Certified training using the latest virtual simulators and real equipment in a safe and monitored environment",
+    "cta": "Explore Training Programs",
+    "ctaSchedule": "Course Schedule"
+  },
+  "stats": {
+    "title": "Our Numbers Speak",
+    "trainingHours": "Annual Training Hours",
+    "successRate": "Success Rate",
+    "machines": "Machines & Simulators",
+    "employmentRate": "Employment Rate After Graduation"
+  },
+  "sectors": {
+    "title": "Our Training Sectors",
+    "publicWorks": {
+      "title": "Public Works and Construction",
+      "description": "Intensive training on excavation and lifting equipment in complex urban and desert environments.",
+      "extraDescription": "Dedicated training program for public works equipment: tower cranes, tracked cranes, excavators, bulldozers... Trainees learn control, safety procedures, reading lifting plans, and dealing with complex environments in simulation."
+    },
+    "mining": {
+      "title": "Mining and Quarries",
+      "description": "Handling the giants. Massive equipment requiring extreme precision and high safety awareness.",
+      "extraDescription": "Training on excavation and extraction equipment: giant excavators, mining trucks, crushers... Focus on: working in hazardous environments, risk analysis, controlling heavy equipment under pressure, and navigating mining sites."
+    },
+    "logistics": {
+      "title": "Logistics and Ports",
+      "description": "Speed and precision in transporting containers and goods within ports and large warehouses.",
+      "extraDescription": "Specialized training in port and warehouse handling equipment"
+    },
+    "exploreMore": "Explore More"
+  },
+  "hse": {
+    "title": "Health, Safety, and Environment (HSE)",
+    "safetyFirst": {
+      "title": "Safety Before Skill",
+      "description": "We teach you that the emergency stop button is more important than the control stick."
+    },
+    "riskSimulation": {
+      "title": "Risk Simulation",
+      "description": "Virtual training on fires, rollovers, and adverse weather conditions."
+    },
+    "operatorEthics": {
+      "title": "Operator Ethics",
+      "description": "Responsibility, punctuality, and preserving company equipment."
+    }
+  },
+  "benefits": {
+    "title": "Why Choose Us?",
+    "absoluteSafety": {
+      "title": "Absolute Safety",
+      "description": "Zero accident risk. Learn in a controlled and safe environment."
+    },
+    "enhancedEfficiency": {
+      "title": "Enhanced Efficiency",
+      "description": "Improve your productivity and accuracy through intensive practice."
+    },
+    "costReduction": {
+      "title": "Cost Reduction",
+      "description": "Save on fuel consumption, maintenance, and training fees."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": {
+      "question": "Is the certificate state-recognized?",
+      "answer": "Yes, our certificates are accredited and qualify you to work directly in major national and private companies."
+    },
+    "q2": {
+      "question": "I have no prior experience, can I enroll?",
+      "answer": "Absolutely. Our programs are designed to take you from zero to professional."
+    },
+    "q3": {
+      "question": "How long is the training?",
+      "answer": "It varies by specialty, typically ranging from 3 weeks for intensive programs to 3 months for comprehensive training."
+    },
+    "q4": {
+      "question": "Do you provide accommodation for trainees from other provinces?",
+      "answer": "Yes, we have agreements with nearby accommodation centers at affordable rates for trainees."
+    },
+    "q5": {
+      "question": "How is practical training conducted?",
+      "answer": "We start with virtual simulation then move to real equipment in a closed and safe testing field."
+    }
+  },
+  "journey": {
+    "title": "Training Journey",
+    "step1": {
+      "title": "Registration",
+      "description": "Submit your administrative file. No high educational level required, the willingness to learn is what matters most."
+    },
+    "step2": {
+      "title": "Simulation",
+      "description": "Learn the basics of driving, arm control, and safety inside a virtual cockpit."
+    },
+    "step3": {
+      "title": "Field Application",
+      "description": "Move to the real machine in the field to reinforce what you learned in simulation."
+    },
+    "step4": {
+      "title": "Certification and Employment",
+      "description": "Obtain a state-accredited diploma and start your professional career in companies."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "reception": "Reception and Guidance",
+    "registration1": "Registration (Office 1)",
+    "registration2": "Registration (Office 2)",
+    "corporate": "Corporate Offers",
+    "management": "General Management",
+    "support": "Technical Support",
+    "callNow": "Call Now",
+    "copyNumber": "Copy Number",
+    "numberCopied": "Number Copied"
+  },
+  "courseSchedule": {
+    "title": "Upcoming Course Schedule",
+    "startDate": "Start Date",
+    "wilaya": "Province",
+    "academy": "Academy",
+    "duration": "Duration",
+    "open": "Open for Registration",
+    "closingSoon": "Closing Soon",
+    "full": "Full",
+    "register": "Register Now",
+    "backToHome": "Back to Home"
+  },
+  "footer": {
+    "rights": "All Rights Reserved"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "back": "Back",
+    "learnMore": "Learn More"
+  }
+}
