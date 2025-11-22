@@ -33,7 +33,7 @@ const HeroParallax: React.FC = () => {
                 </div>
 
                 {/* Overlay: 60% opacity + 3px blur */}
-                <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px] z-10" />
+                <div className="absolute inset-0 bg-black/20 z-10" />
 
                 {/* Main Video */}
                 <video

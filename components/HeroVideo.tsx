@@ -80,7 +80,7 @@ const HeroVideo: React.FC = () => {
                             loop
                             muted
                             playsInline
-                            className="absolute inset-0 w-full h-full opacity-80 group-hover:scale-110 transition-transform duration-700"
+                            className="absolute inset-0 w-full h-full opacity-80 group-hover:scale-110 transition-transform duration-500"
                         >
                             <source src="../assets/videos/video_banner.mp4" type="video/mp4" />
                         </video>
