@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Home, Calendar, Wrench } from 'lucide-react';
-import logo from '../assets/images/logo_final.png';
+import logo from '../assets/images/fiinale-finale.png';
 
 interface NavbarProps {
     onNavigate: (view: string) => void;
@@ -40,114 +40,6 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
     return (
         <>
             <nav
-                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-industrial-dark/90 backdrop-blur-md border-b border-white/10 py-2 shadow-lg'
-                    : 'bg-industrial-dark md:bg-transparent py-4'
-                    }`}
-            >
-                <div className="container mx-auto px-4 md:px-6">
-                    <div className="flex items-center justify-between flex-row-reverse">
-                        {/* Logo */}
-                        {/* Logo */}
-                        <div className="flex items-center gap-4 md:gap-8">
-                            <div
-                                className="cursor-pointer flex items-center"
-                                onClick={() => handleNavClick('home')}
-                            >
-                                <img
-                                    src={logo}
-                                    alt="Dzair Formation"
-                                    className={`transition-all duration-300 ${isScrolled ? 'h-12 md:h-16' : 'h-16 md:h-32'}`}
-                                />
-                            </div >
-
-                            <button
-                                onClick={() => {
-                                    const contactSection = document.getElementById('contact_footer');
-                                    if (contactSection) {
-                                        contactSection.scrollIntoView({ behavior: 'smooth' });
-                                    } else {
-                                        handleNavClick('home');
-                                        setTimeout(() => {
-                                            document.getElementById('contact_footer')?.scrollIntoView({ behavior: 'smooth' });
-                                        }, 100);
-                                    }
-                                }}
-                                className="bg-industrial-yellow text-industrial-dark px-3 py-1.5 md:px-6 md:py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-xs md:text-base whitespace-nowrap"
-                            >
-                                سجل الآن
-                            </button>
-                        </div>
-
-                        {/* Desktop Navigation */}
-                        <div className="hidden md:flex items-center space-x-1 space-x-reverse">
-                            {
-                                navLinks.map((link) => {
-                                    const Icon = link.icon;
-                                    const isActive = currentView === link.id;
-                                    return (
-                                        <button
-                                            key={link.id}
-                                            onClick={() => handleNavClick(link.id)}
-                                            className={`relative px-4 py-2 rounded-lg flex items-center gap-2 transition-all duration-300 group ${isActive
-                                                ? 'text-industrial-yellow bg-white/5 font-bold'
-                                                : 'text-gray-300 hover:text-white hover:bg-white/5'
-                                                }`}
-                                        >
-                                            <Icon size={18} className={isActive ? 'text-industrial-yellow' : 'text-gray-400 group-hover:text-white'} />
-                                            <span>{link.label}</span>
-                                            {isActive && (
-                                                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-industrial-yellow rounded-full mx-4" />
-                                            )}
-                                        </button>
-                                    );
-                                })
-                            }
-
-                            {/* CTA Button */}
-                            <div className="flex items-center gap-4 mr-4">
-                                <div className="hidden lg:flex items-center gap-2 bg-white/5 px-3 py-1.5 rounded-full border border-white/10 animate-fade-up">
-                                    <span className="relative flex h-2 w-2">
-                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                                    </span>
-                                    <span className="text-sm font-semibold tracking-wide text-emerald-400">
-                                        التسجيلات مفتوحة لدورة جانفي 2026
-                                    </span>
-                                </div>
-
-                                <button
-                                    onClick={() => {
-                                        const contactSection = document.getElementById('contact_footer');
-                                        if (contactSection) {
-                                            contactSection.scrollIntoView({ behavior: 'smooth' });
-                                        } else {
-                                            handleNavClick('home');
-                                            setTimeout(() => {
-                                                document.getElementById('contact_footer')?.scrollIntoView({ behavior: 'smooth' });
-                                            }, 100);
-                                        }
-                                    }}
-                                    className="bg-white/10 text-white px-5 py-2 rounded-lg font-bold hover:bg-white/20 transition-colors border border-white/10"
-                                >
-                                    اتصل بنا
-                                </button>
-                            </div>
-                        </div >
-
-                        {/* Mobile Menu Button */}
-                        <button
-                            className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
-                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        >
-                            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-                        </button >
-                    </div >
-                </div >
-            </nav >
-
-            {/* Mobile Menu Overlay */}
-            <div
                 className={`fixed inset-0 z-40 bg-black/60 backdrop-blur-sm transition-opacity duration-300 md:hidden ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                     }`}
                 onClick={() => setIsMobileMenuOpen(false)}

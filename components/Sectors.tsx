@@ -230,23 +230,48 @@ interface SectorsProps {
 
 const Sectors: React.FC<SectorsProps> = ({ onNavigate }) => {
   return (
-    <div className="bg-industrial-dark">
-      <div className="py-20 px-4 text-center relative z-10">
-        <div className="inline-block px-4 py-1 rounded-full border border-yellow-500/30 text-yellow-500 bg-yellow-500/10 text-sm font-bold mb-4">
-          برامج التدريب
+    <>
+      <section className="py-24 px-6 bg-yellow-500 text-slate-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-multiply"></div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h2 className="text-4xl md:text-5xl font-black mb-6">مستقبلك المهني يبدأ هنا</h2>
+          <p className="text-xl font-medium mb-8 max-w-2xl mx-auto opacity-90">
+            لا تضيع الفرصة. المقاعد محدودة في كل دفعة لضمان جودة التدريب العملي. انضم إلى أكثر من مئات المتدربين تخرجوا من مدرستنا.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={() => onNavigate?.('schedule')}
+              className="px-8 py-4 bg-slate-900 text-white hover:bg-slate-800 font-bold rounded-xl text-lg shadow-xl transition-transform transform hover:scale-105"
+            >
+              مواعيد الدورات
+            </button>
+            <button
+              onClick={() => onNavigate?.('contact')}
+              className="px-8 py-4 bg-white text-slate-900 hover:bg-slate-100 font-bold rounded-xl text-lg shadow-xl transition-transform transform hover:scale-105"
+            >
+              سجل اللآن
+            </button>
+          </div>
         </div>
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">اختر تخصصك المستقبلي</h2>
-        <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-          تريد أن تصبح مشغّل حفّارة، لودر، أو شاحنة نقل؟
-        </p>
-        <p className="text-slate-500 mt-2">
-          برامجنا العملية تغطي كل الآلات في قطاعات : البناء، النقل، المناجم، الموانئ والمزيد
-        </p>
+      </section>
+      <div className="bg-industrial-dark">
+        <div className="py-20 px-4 text-center relative z-10">
+          <div className="inline-block px-4 py-1 rounded-full border border-yellow-500/30 text-yellow-500 bg-yellow-500/10 text-sm font-bold mb-4">
+            برامج التدريب
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">اختر تخصصك المستقبلي</h2>
+          <p className="text-slate-400 max-w-2xl mx-auto text-lg">
+            تريد أن تصبح مشغّل حفّارة، لودر، أو شاحنة نقل؟
+          </p>
+          <p className="text-slate-500 mt-2">
+            برامجنا العملية تغطي كل الآلات في قطاعات : البناء، النقل، المناجم، الموانئ والمزيد
+          </p>
+        </div>
+        {SECTORS.map((sector) => (
+          <SectorItem key={sector.id} sector={sector} onNavigate={onNavigate} />
+        ))}
       </div>
-      {SECTORS.map((sector) => (
-        <SectorItem key={sector.id} sector={sector} onNavigate={onNavigate} />
-      ))}
-    </div>
+    </>
   );
 };
 

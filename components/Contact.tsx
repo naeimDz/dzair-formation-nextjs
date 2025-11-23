@@ -24,40 +24,21 @@ const Contact: React.FC<ContactProps> = ({ onNavigate }) => {
   return (
     <>
       {/* CTA Section */}
-      <section className="py-24 px-6 bg-yellow-500 text-slate-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-multiply"></div>
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">مستقبلك المهني يبدأ هنا</h2>
-          <p className="text-xl font-medium mb-8 max-w-2xl mx-auto opacity-90">
-            لا تضيع الفرصة. المقاعد محدودة في كل دفعة لضمان جودة التدريب العملي. انضم إلى أكثر من مئات المتدربين تخرجوا من مدرستنا.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => onNavigate?.('schedule')}
-              className="px-8 py-4 bg-slate-900 text-white hover:bg-slate-800 font-bold rounded-xl text-lg shadow-xl transition-transform transform hover:scale-105"
-            >
-              مواعيد الدورات
-            </button>
-            <button className="px-8 py-4 bg-white text-slate-900 hover:bg-slate-100 font-bold rounded-xl text-lg shadow-xl transition-transform transform hover:scale-105">
-              تحدث مع مستشار
-            </button>
-          </div>
-        </div>
-      </section>
+
       <footer id="contact_footer" className="bg-industrial-dark text-white pt-24 pb-12 border-t border-gray-800">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-16 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
             {/* Contact Info */}
             <div>
-              <h2 className="text-4xl font-bold mb-8 text-industrial-yellow hidden md:block">
+              <h2 className="text-4xl font-bold mb-8 text-industrial-yellow">
                 ابدأ مسارك المهني
               </h2>
-              <p className="text-xl text-gray-400 mb-12 max-w-md leading-relaxed hidden md:block">
+              <p className="text-xl text-gray-400 mb-12 max-w-md leading-relaxed">
                 جاهز لتطوير مهاراتك؟ تواصل معنا لحجز مقعدك في الدورة القادمة أو لطلب عرض أسعار لشركتك.
               </p>
 
               <div className="space-y-8">
-                <div className="hidden md:flex items-center gap-6 group">
+                <div className="flex items-center gap-6 group">
                   <div className="w-14 h-14 bg-gray-800 rounded-2xl flex items-center justify-center text-industrial-yellow group-hover:bg-industrial-yellow group-hover:text-black transition-colors">
                     <Phone size={28} />
                   </div>
@@ -77,7 +58,7 @@ const Contact: React.FC<ContactProps> = ({ onNavigate }) => {
                   </div>
                 </div>
 
-                <div className="hidden md:flex items-center gap-6 group">
+                <div className="flex items-center gap-6 group">
                   <div className="w-14 h-14 bg-gray-800 rounded-2xl flex items-center justify-center text-industrial-yellow group-hover:bg-industrial-yellow group-hover:text-black transition-colors">
                     <MapPin size={28} />
                   </div>
@@ -116,7 +97,7 @@ const Contact: React.FC<ContactProps> = ({ onNavigate }) => {
             </div>
 
             {/* Form */}
-            <div className="hidden md:block bg-white rounded-3xl p-8 md:p-10 text-gray-900 shadow-2xl relative overflow-hidden">
+            <div className="bg-white rounded-3xl p-8 md:p-10 text-gray-900 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-industrial-yellow/10 rounded-bl-full -mr-10 -mt-10 pointer-events-none"></div>
 
               <h3 className="text-2xl font-bold mb-8 relative z-10">تواصل معنا</h3>
@@ -181,7 +162,7 @@ const Contact: React.FC<ContactProps> = ({ onNavigate }) => {
                     ))}
                   </div>
                   {selectedMachines.length === 0 && (
-                    <p className="text-xs text-red-400 mt-2 mr-1 hidden">يرجى اختيار آلة واحدة على الأقل</p>
+                    <p className="text-xs text-red-400 mt-2 mr-1">يرجى اختيار آلة واحدة على الأقل</p>
                   )}
                 </div>
 
