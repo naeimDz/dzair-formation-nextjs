@@ -33,7 +33,7 @@ const MachineDetail: React.FC<MachineDetailProps> = ({ machine, onBack }) => {
                             className="w-full h-full object-cover filter blur-sm scale-110"
                         />
                         <div className="absolute inset-0 flex items-center justify-center z-20">
-                            <div className="bg-black/50 p-4 rounded-full border border-white/20 backdrop-blur-md">
+                            <div className="bg-black/50 p-4  border border-white/20 backdrop-blur-md">
                                 <Gamepad2 size={48} className="text-blue-400" />
                             </div>
                         </div>
@@ -48,7 +48,7 @@ const MachineDetail: React.FC<MachineDetailProps> = ({ machine, onBack }) => {
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 flex items-center justify-center z-20">
-                            <div className="bg-black/50 p-4 rounded-full border border-white/20 backdrop-blur-md">
+                            <div className="bg-black/50 p-4  border border-white/20 backdrop-blur-md">
                                 <Construction size={48} className="text-industrial-yellow" />
                             </div>
                         </div>
@@ -70,7 +70,7 @@ const MachineDetail: React.FC<MachineDetailProps> = ({ machine, onBack }) => {
                             <ArrowRight className="ml-2" /> العودة للكتالوغ
                         </button>
 
-                        <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 px-4 py-2 rounded-full mb-6 backdrop-blur-md">
+                        <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 px-4 py-2  mb-6 backdrop-blur-md">
                             <BrainCircuit size={18} className="text-blue-400" />
                             <span className="text-blue-200 text-sm font-bold">منهج تدريبي معزز بـ AI</span>
                         </div>
@@ -123,7 +123,7 @@ const MachineDetail: React.FC<MachineDetailProps> = ({ machine, onBack }) => {
                                 transition={{ delay: i * 0.1 }}
                                 className="flex items-start gap-4 p-6 bg-stone-800/50 rounded-2xl border border-stone-700 hover:border-industrial-yellow/30 transition-colors"
                             >
-                                <div className="bg-industrial-yellow/10 p-3 rounded-lg text-industrial-yellow">
+                                <div className="bg-industrial-yellow/10 p-3 text-industrial-yellow">
                                     <CheckCircle2 size={24} />
                                 </div>
                                 <p className="text-lg font-medium text-gray-200">{skill}</p>
@@ -135,7 +135,7 @@ const MachineDetail: React.FC<MachineDetailProps> = ({ machine, onBack }) => {
 
             {/* 3) Simulation Section */}
             <section className="py-20 px-6 bg-industrial-dark relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-900/5 blur-[120px] rounded-full pointer-events-none" />
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-900/5 blur-[120px]  pointer-events-none" />
 
                 <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
                     <div className="relative group">
@@ -147,7 +147,7 @@ const MachineDetail: React.FC<MachineDetailProps> = ({ machine, onBack }) => {
                                 className="w-full object-cover filter contrast-125 brightness-90"
                             />
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="w-20 h-20 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 cursor-pointer hover:scale-110 transition-transform">
+                                <div className="w-20 h-20 bg-white/10 backdrop-blur-md  flex items-center justify-center border border-white/30 cursor-pointer hover:scale-110 transition-transform">
                                     <Play size={32} className="text-white fill-white" />
                                 </div>
                             </div>
@@ -164,7 +164,7 @@ const MachineDetail: React.FC<MachineDetailProps> = ({ machine, onBack }) => {
                     </div>
 
                     <div>
-                        <div className="inline-block px-4 py-1 rounded-full bg-blue-900/30 border border-blue-500/30 text-blue-400 text-sm font-bold mb-6">
+                        <div className="inline-block px-4 py-1  bg-blue-900/30 border border-blue-500/30 text-blue-400 text-sm font-bold mb-6">
                             سلاحك الأول
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold mb-6">المحاكاة: <span className="text-blue-500">تعلّم بلا خطر</span></h2>
@@ -180,7 +180,7 @@ const MachineDetail: React.FC<MachineDetailProps> = ({ machine, onBack }) => {
                                 "تكرار المحاولات بلا حدود حتى الإتقان"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-center gap-3 text-gray-300">
-                                    <div className="w-2 h-2 rounded-full bg-blue-500" />
+                                    <div className="w-2 h-2  bg-blue-500" />
                                     {item}
                                 </li>
                             ))}
@@ -193,7 +193,7 @@ const MachineDetail: React.FC<MachineDetailProps> = ({ machine, onBack }) => {
             <section className="py-20 px-6 bg-stone-950">
                 <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center md:flex-row-reverse">
                     <div className="order-2 md:order-1">
-                        <div className="inline-block px-4 py-1 rounded-full bg-yellow-900/30 border border-yellow-500/30 text-yellow-500 text-sm font-bold mb-6">
+                        <div className="inline-block px-4 py-1  bg-yellow-900/30 border border-yellow-500/30 text-yellow-500 text-sm font-bold mb-6">
                             الواقع الميداني
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold mb-6">التطبيق الميداني</h2>
@@ -208,7 +208,7 @@ const MachineDetail: React.FC<MachineDetailProps> = ({ machine, onBack }) => {
                                 { title: "مجموعات صغيرة", desc: "عدد محدود للمتدربين لضمان وقت قيادة أطول." }
                             ].map((item, i) => (
                                 <div key={i} className="flex gap-4">
-                                    <div className="bg-stone-800 p-3 h-fit rounded-lg text-industrial-yellow">
+                                    <div className="bg-stone-800 p-3 h-fit text-industrial-yellow">
                                         <Construction size={24} />
                                     </div>
                                     <div>

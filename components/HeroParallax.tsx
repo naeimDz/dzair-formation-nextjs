@@ -22,7 +22,7 @@ const HeroParallax: React.FC = () => {
     const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
     return (
-        <div ref={containerRef} className="relative h-auto md:h-screen w-full overflow-hidden bg-black pt-24 md:pt-0">
+        <div ref={containerRef} className="relative h-auto md:h-screen w-full overflow-hidden pt-24 md:pt-0">
             {/* Parallax Video Background */}
             <motion.div
                 style={isMobile ? {} : { y, opacity }}
@@ -55,11 +55,11 @@ const HeroParallax: React.FC = () => {
                         transition={{ delay: 1, duration: 1 }}
                         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/70 flex flex-col items-center gap-2"
                     >
-                        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-1">
+                        <div className="w-6 h-10 border-2 border-white/30  flex justify-center p-1">
                             <motion.div
                                 animate={{ y: [0, 12, 0] }}
                                 transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-                                className="w-1.5 h-1.5 bg-white rounded-full"
+                                className="w-1.5 h-1.5 bg-white "
                             />
                         </div>
                     </motion.div>

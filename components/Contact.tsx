@@ -154,7 +154,7 @@ const Contact: React.FC<ContactProps> = ({ onNavigate }) => {
                       >
                         <span className="text-sm font-bold text-center">{machine.name}</span>
                         {selectedMachines.includes(machine.id) && (
-                          <div className="absolute -top-2 -right-2 bg-industrial-yellow text-black rounded-full p-0.5 shadow-sm">
+                          <div className="absolute -top-2 -right-2 bg-industrial-yellow text-black  p-0.5 shadow-sm">
                             <Check size={12} strokeWidth={3} />
                           </div>
                         )}

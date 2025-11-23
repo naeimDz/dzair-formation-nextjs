@@ -17,7 +17,7 @@ const HorizontalCard: React.FC<{ machine: Machine; index: number }> = ({ machine
           alt={machine.name}
           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
         />
-        <div className="absolute top-4 right-4 z-20 bg-industrial-yellow text-black text-xs font-bold px-3 py-1 rounded-full shadow-md">
+        <div className="absolute top-4 right-4 z-20 bg-industrial-yellow text-black text-xs font-bold px-3 py-1  shadow-md">
           محاكاة دقيقة
         </div>
       </div>
@@ -105,7 +105,7 @@ const CompactCard: React.FC<{ machine: Machine; index: number }> = ({ machine, i
         </p>
 
         {machine.highlight && (
-          <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 px-3 py-1.5 rounded-lg backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 px-3 py-1.5 backdrop-blur-sm">
             <span className="text-blue-400 text-xs font-bold">{machine.highlight}</span>
           </div>
         )}
@@ -256,7 +256,7 @@ const Sectors: React.FC<SectorsProps> = ({ onNavigate }) => {
       </section>
       <div className="bg-industrial-dark">
         <div className="py-20 px-4 text-center relative z-10">
-          <div className="inline-block px-4 py-1 rounded-full border border-yellow-500/30 text-yellow-500 bg-yellow-500/10 text-sm font-bold mb-4">
+          <div className="inline-block px-4 py-1  border border-yellow-500/30 text-yellow-500 bg-yellow-500/10 text-sm font-bold mb-4">
             برامج التدريب
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">اختر تخصصك المستقبلي</h2>

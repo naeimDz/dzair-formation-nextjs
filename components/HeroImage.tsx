@@ -28,10 +28,10 @@ const HeroImage: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 mb-6 backdrop-blur-sm">
+                    <div className="inline-flex items-center gap-2 px-4 py-2  bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 mb-6 backdrop-blur-sm">
                         <span className="relative flex h-3 w-3">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-3 w-3 bg-yellow-500"></span>
+                            <span className="animate-ping absolute inline-flex h-full w-full  bg-yellow-400 opacity-75"></span>
+                            <span className="relative inline-flex  h-3 w-3 bg-yellow-500"></span>
                         </span>
                         <span className="text-sm font-semibold tracking-wide">
                             التسجيلات مفتوحة لدورة جانفي 2026
@@ -50,7 +50,7 @@ const HeroImage: React.FC = () => {
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-industrial-yellow text-industrial-dark font-bold py-4 px-8 rounded-full text-lg shadow-[0_0_20px_rgba(250,204,21,0.4)] hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] transition-all"
+                            className="bg-industrial-yellow text-industrial-dark font-bold py-4 px-8  text-lg shadow-[0_0_20px_rgba(250,204,21,0.4)] hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] transition-all"
                         >
                             سجل اللآن
                         </motion.button>

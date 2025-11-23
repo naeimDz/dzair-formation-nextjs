@@ -37,7 +37,7 @@ const StickyContact: React.FC = () => {
                             </div>
                             <button
                                 onClick={() => setIsOpen(false)}
-                                className="text-slate-900 hover:bg-yellow-400 p-1 rounded-full transition"
+                                className="text-slate-900 hover:bg-yellow-400 p-1  transition"
                             >
                                 <X size={20} />
                             </button>
@@ -52,7 +52,7 @@ const StickyContact: React.FC = () => {
                                     className="bg-slate-900/50 hover:bg-slate-900 p-3 rounded-xl transition-colors group"
                                 >
                                     <div className="flex items-center gap-3 mb-2">
-                                        <div className={`p-2 rounded-lg bg-slate-800 ${contact.color}`}>
+                                        <div className={`p-2 bg-slate-800 ${contact.color}`}>
                                             {contact.icon}
                                         </div>
                                         <div>
@@ -65,14 +65,14 @@ const StickyContact: React.FC = () => {
                                     <div className="flex gap-2 mt-2">
                                         <a
                                             href={`tel:${contact.number.replace(/\s/g, '')}`}
-                                            className="flex-1 bg-yellow-500 hover:bg-yellow-400 text-slate-900 text-xs font-bold py-2 rounded-lg flex items-center justify-center gap-2 transition-colors"
+                                            className="flex-1 bg-yellow-500 hover:bg-yellow-400 text-slate-900 text-xs font-bold py-2 flex items-center justify-center gap-2 transition-colors"
                                         >
                                             <Phone size={14} />
                                             اتصال
                                         </a>
                                         <button
                                             onClick={() => handleCopy(contact.number, contact.id)}
-                                            className="w-10 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg flex items-center justify-center transition-colors"
+                                            className="w-10 bg-slate-700 hover:bg-slate-600 text-slate-300 flex items-center justify-center transition-colors"
                                             title="نسخ الرقم"
                                         >
                                             {copiedId === contact.id ? <Check size={14} className="text-green-400" /> : <Copy size={14} />}
@@ -93,14 +93,14 @@ const StickyContact: React.FC = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(!isOpen)}
-                className="group flex items-center justify-center w-14 h-14 bg-yellow-500 hover:bg-yellow-400 text-slate-900 rounded-full shadow-lg shadow-yellow-500/20 transition-all relative z-50"
+                className="group flex items-center justify-center w-14 h-14 bg-yellow-500 hover:bg-yellow-400 text-slate-900  shadow-lg shadow-yellow-500/20 transition-all relative z-50"
             >
                 {isOpen ? <X size={28} /> : <Phone size={28} />}
 
                 {!isOpen && (
                     <span className="absolute -top-1 -right-1 flex h-4 w-4">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-4 w-4 bg-red-500"></span>
+                        <span className="animate-ping absolute inline-flex h-full w-full  bg-red-400 opacity-75"></span>
+                        <span className="relative inline-flex  h-4 w-4 bg-red-500"></span>
                     </span>
                 )}
             </motion.button>

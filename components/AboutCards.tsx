@@ -34,7 +34,7 @@ const AboutCards: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">أكثر من مجرد تدريب</h2>
-          <div className="h-1 w-20 bg-industrial-yellow mx-auto rounded-full"></div>
+          <div className="h-1 w-20 bg-industrial-yellow mx-auto "></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -48,7 +48,7 @@ const AboutCards: React.FC = () => {
             className="bg-white p-8 rounded-2xl shadow-xl border-r-4 border-industrial-yellow hover:shadow-2xl transition-shadow"
           >
             <div className="flex items-center gap-4 mb-6">
-              <div className="p-3 bg-yellow-100 rounded-lg text-yellow-700">
+              <div className="p-3 bg-yellow-100 text-yellow-700">
                 <BookOpen size={32} />
               </div>
               <h3 className="text-2xl font-bold">البرنامج والتدريب</h3>
@@ -81,7 +81,7 @@ const AboutCards: React.FC = () => {
             <Award className="absolute -bottom-10 -left-10 text-gray-800 opacity-20 w-64 h-64" />
 
             <div className="flex items-center gap-4 mb-6 relative z-10">
-              <div className="p-3 bg-gray-700 rounded-lg text-gray-200">
+              <div className="p-3 bg-gray-700 text-gray-200">
                 <Award size={32} />
               </div>
               <h3 className="text-2xl font-bold">لماذا نحن؟</h3>

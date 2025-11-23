@@ -87,7 +87,7 @@ const MachineCard: React.FC<{
                     className="w-full h-full object-contain p-4 transform group-hover:scale-110 transition-transform duration-500"
                 />
                 {machine.highlight && (
-                    <div className="absolute top-4 right-4 z-20 bg-industrial-yellow/90 text-black text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm">
+                    <div className="absolute top-4 right-4 z-20 bg-industrial-yellow/90 text-black text-xs font-bold px-3 py-1  backdrop-blur-sm">
                         {machine.highlight}
                     </div>
                 )}

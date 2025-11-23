@@ -39,7 +39,7 @@ const AIChat: React.FC = () => {
                     {/* Header */}
                     <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 p-4 flex justify-between items-center shadow-md shrink-0">
                         <div className="flex items-center gap-3 text-slate-900">
-                            <div className="bg-white/20 p-1.5 rounded-lg backdrop-blur-sm">
+                            <div className="bg-white/20 p-1.5 backdrop-blur-sm">
                                 <Bot size={24} className="text-slate-900" />
                             </div>
                             <div>
@@ -47,7 +47,7 @@ const AIChat: React.FC = () => {
                                 <p className="text-xs font-medium opacity-80">متصل الآن</p>
                             </div>
                         </div>
-                        <button onClick={() => setIsOpen(false)} className="text-slate-900 hover:bg-white/20 p-2 rounded-full transition-colors">
+                        <button onClick={() => setIsOpen(false)} className="text-slate-900 hover:bg-white/20 p-2  transition-colors">
                             <X size={20} />
                         </button>
                     </div>
@@ -96,7 +96,7 @@ const AIChat: React.FC = () => {
                                     <button
                                         key={idx}
                                         onClick={() => handleChipClick(action.text)}
-                                        className="whitespace-nowrap px-3 py-1.5 bg-slate-700 hover:bg-yellow-500 hover:text-slate-900 text-slate-300 text-xs rounded-full border border-slate-600 transition-all duration-200 active:scale-95 flex-shrink-0"
+                                        className="whitespace-nowrap px-3 py-1.5 bg-slate-700 hover:bg-yellow-500 hover:text-slate-900 text-slate-300 text-xs  border border-slate-600 transition-all duration-200 active:scale-95 flex-shrink-0"
                                     >
                                         {action.label}
                                     </button>
@@ -120,7 +120,7 @@ const AIChat: React.FC = () => {
                             <button
                                 onClick={() => sendMessage()}
                                 disabled={isLoading || !input.trim()}
-                                className="absolute left-1.5 bg-yellow-500 hover:bg-yellow-400 disabled:opacity-50 text-slate-900 p-2 rounded-lg transition-all"
+                                className="absolute left-1.5 bg-yellow-500 hover:bg-yellow-400 disabled:opacity-50 text-slate-900 p-2 transition-all"
                             >
                                 {isLoading ? <Loader2 size={18} className="animate-spin" /> : <Send size={18} className="rtl:rotate-180" />}
                             </button>
@@ -131,7 +131,7 @@ const AIChat: React.FC = () => {
 
             <button
                 onClick={() => toggleChat()}
-                className="group flex items-center justify-center w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-600 text-slate-900 rounded-full shadow-lg shadow-yellow-500/30 transition-all duration-300 hover:scale-110 hover:rotate-3 active:scale-95"
+                className="group flex items-center justify-center w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-600 text-slate-900  shadow-lg shadow-yellow-500/30 transition-all duration-300 hover:scale-110 hover:rotate-3 active:scale-95"
             >
                 {isOpen ? <X size={28} /> : <MessageCircle size={28} />}
             </button>

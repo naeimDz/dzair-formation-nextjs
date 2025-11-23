@@ -14,13 +14,13 @@ const Footer: React.FC = () => {
                             نحن رواد التدريب المهني في مجال الآلات الثقيلة في الجزائر. نلتزم بأعلى معايير السلامة والجودة لتخريج جيل محترف.
                         </p>
                         <div className="flex gap-4">
-                            <a href="#" className="w-10 h-10 rounded-lg bg-slate-900 flex items-center justify-center text-slate-400 hover:text-yellow-500 hover:bg-slate-800 transition-all">
+                            <a href="#" className="w-10 h-10 bg-slate-900 flex items-center justify-center text-slate-400 hover:text-yellow-500 hover:bg-slate-800 transition-all">
                                 <Facebook size={20} />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-lg bg-slate-900 flex items-center justify-center text-slate-400 hover:text-pink-500 hover:bg-slate-800 transition-all">
+                            <a href="#" className="w-10 h-10 bg-slate-900 flex items-center justify-center text-slate-400 hover:text-pink-500 hover:bg-slate-800 transition-all">
                                 <Instagram size={20} />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-lg bg-slate-900 flex items-center justify-center text-slate-400 hover:text-blue-500 hover:bg-slate-800 transition-all">
+                            <a href="#" className="w-10 h-10 bg-slate-900 flex items-center justify-center text-slate-400 hover:text-blue-500 hover:bg-slate-800 transition-all">
                                 <Linkedin size={20} />
                             </a>
                         </div>

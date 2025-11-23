@@ -40,8 +40,8 @@ export const Features: React.FC = () => {
                                     </p>
                                 </div>
                                 <div className="mt-8 inline-flex gap-2">
-                                    <span className="px-3 py-1 rounded-full bg-green-500/10 text-green-500 text-xs font-bold">صفر حوادث</span>
-                                    <span className="px-3 py-1 rounded-full bg-blue-500/10 text-blue-500 text-xs font-bold">بيئة مراقبة</span>
+                                    <span className="px-3 py-1  bg-green-500/10 text-green-500 text-xs font-bold">صفر حوادث</span>
+                                    <span className="px-3 py-1  bg-blue-500/10 text-blue-500 text-xs font-bold">بيئة مراقبة</span>
                                 </div>
                             </div>
                         </div>

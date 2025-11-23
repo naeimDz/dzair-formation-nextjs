@@ -52,7 +52,7 @@ const CourseSchedule: React.FC<CourseScheduleProps> = ({ onBack }) => {
                             <Reveal key={course.id} delay={index * 100}>
                                 <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 hover:border-yellow-500/50 transition-all hover:-translate-y-1 group relative overflow-hidden">
                                     {/* Status Badge */}
-                                    <div className={`absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1.5 ${status.bg} ${status.color} ${status.border} border`}>
+                                    <div className={`absolute top-4 left-4 px-3 py-1  text-xs font-bold flex items-center gap-1.5 ${status.bg} ${status.color} ${status.border} border`}>
                                         <StatusIcon size={14} />
                                         {status.text}
                                     </div>
@@ -61,7 +61,7 @@ const CourseSchedule: React.FC<CourseScheduleProps> = ({ onBack }) => {
 
                                     <div className="space-y-4 mb-8">
                                         <div className="flex items-center gap-3 text-slate-300">
-                                            <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-yellow-500">
+                                            <div className="w-10 h-10 bg-slate-800 flex items-center justify-center text-yellow-500">
                                                 <Calendar size={20} />
                                             </div>
                                             <div>
@@ -71,7 +71,7 @@ const CourseSchedule: React.FC<CourseScheduleProps> = ({ onBack }) => {
                                         </div>
 
                                         <div className="flex items-center gap-3 text-slate-300">
-                                            <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-blue-500">
+                                            <div className="w-10 h-10 bg-slate-800 flex items-center justify-center text-blue-500">
                                                 <MapPin size={20} />
                                             </div>
                                             <div>
@@ -81,7 +81,7 @@ const CourseSchedule: React.FC<CourseScheduleProps> = ({ onBack }) => {
                                         </div>
 
                                         <div className="flex items-center gap-3 text-slate-300">
-                                            <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-purple-500">
+                                            <div className="w-10 h-10 bg-slate-800 flex items-center justify-center text-purple-500">
                                                 <Building2 size={20} />
                                             </div>
                                             <div>
@@ -91,7 +91,7 @@ const CourseSchedule: React.FC<CourseScheduleProps> = ({ onBack }) => {
                                         </div>
 
                                         <div className="flex items-center gap-3 text-slate-300">
-                                            <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-emerald-500">
+                                            <div className="w-10 h-10 bg-slate-800 flex items-center justify-center text-emerald-500">
                                                 <Clock size={20} />
                                             </div>
                                             <div>

@@ -53,7 +53,7 @@ export default function ProblemSolution() {
                                     { icon: CheckCircle2, text: 'سيناريوهات متعددة (مطر، ليل، أعطال)' }
                                 ].map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-4">
-                                        <div className="bg-primary/20 p-1 rounded-full">
+                                        <div className="bg-primary/20 p-1 ">
                                             <item.icon className="w-5 h-5 text-primary" />
                                         </div>
                                         <span className="text-white text-lg font-medium">{item.text}</span>

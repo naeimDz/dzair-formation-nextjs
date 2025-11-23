@@ -11,7 +11,7 @@ const FAQ: React.FC = () => {
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">أسئلة شائعة</h2>
-          <div className="h-1 w-20 bg-industrial-yellow mx-auto rounded-full mb-4"></div>
+          <div className="h-1 w-20 bg-industrial-yellow mx-auto  mb-4"></div>
           <p className="text-gray-600">كل ما تحتاج معرفته عن التسجيل والدراسة</p>
         </div>
 

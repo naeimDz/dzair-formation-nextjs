@@ -71,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
                                         <button
                                             key={link.id}
                                             onClick={() => handleNavClick(link.id)}
-                                            className={`relative px-4 py-2 rounded-lg flex items-center gap-2 transition-all duration-300 group ${isActive
+                                            className={`relative px-4 py-2 flex items-center gap-2 transition-all duration-300 group ${isActive
                                                 ? 'text-industrial-yellow bg-white/5 font-bold'
                                                 : 'text-gray-300 hover:text-white hover:bg-white/5'
                                                 }`}
@@ -79,7 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
                                             <Icon size={18} className={isActive ? 'text-industrial-yellow' : 'text-gray-400 group-hover:text-white'} />
                                             <span>{link.label}</span>
                                             {isActive && (
-                                                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-industrial-yellow rounded-full mx-4" />
+                                                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-industrial-yellow  mx-4" />
                                             )}
                                         </button>
                                     );
@@ -88,10 +88,10 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
 
                             {/* CTA Button */}
                             <div className="flex items-center gap-4 mr-4">
-                                <div className="hidden lg:flex items-center gap-2 bg-white/5 px-3 py-1.5 rounded-full border border-white/10 animate-fade-up">
+                                <div className="hidden lg:flex items-center gap-2 bg-white/5 px-3 py-1.5  border border-white/10 animate-fade-up">
                                     <span className="relative flex h-2 w-2">
-                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                                        <span className="animate-ping absolute inline-flex h-full w-full  bg-emerald-400 opacity-75"></span>
+                                        <span className="relative inline-flex  h-2 w-2 bg-emerald-500"></span>
                                     </span>
                                     <span className="text-sm font-semibold tracking-wide text-emerald-400">
                                         التسجيلات مفتوحة لدورة جانفي 2026
@@ -110,7 +110,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
                                             }, 100);
                                         }
                                     }}
-                                    className="bg-white/10 text-white px-5 py-2 rounded-lg font-bold hover:bg-white/20 transition-colors border border-white/10"
+                                    className="bg-white/10 text-white px-5 py-2 font-bold hover:bg-white/20 transition-colors border border-white/10"
                                 >
                                     اتصل بنا
                                 </button>
@@ -119,7 +119,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
 
                         {/* Mobile Menu Button */}
                         <button
-                            className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+                            className="md:hidden text-white p-2 hover:bg-white/10 transition-colors"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         >
                             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -138,7 +138,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
                                     }, 100);
                                 }
                             }}
-                            className="md:hidden bg-industrial-yellow text-industrial-dark px-3 py-1.5 rounded-lg font-bold hover:bg-yellow-400 transition-colors shadow-lg text-xs whitespace-nowrap"
+                            className="md:hidden bg-industrial-yellow text-industrial-dark px-3 py-1.5 font-bold hover:bg-yellow-400 transition-colors shadow-lg text-xs whitespace-nowrap"
                         >
                             سجل الآن
                         </button>
@@ -177,7 +177,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
                                 <button
                                     key={link.id}
                                     onClick={() => handleNavClick(link.id)}
-                                    className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${isActive
+                                    className={`flex items-center gap-3 px-4 py-3 transition-colors ${isActive
                                         ? 'bg-industrial-yellow/10 text-industrial-yellow border-r-4 border-industrial-yellow'
                                         : 'text-gray-300 hover:bg-white/5 hover:text-white'
                                         }`}
@@ -203,7 +203,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
                                     }, 100);
                                 }
                             }}
-                            className="bg-industrial-yellow text-industrial-dark px-4 py-3 rounded-lg font-bold text-center hover:bg-yellow-400 transition-colors"
+                            className="bg-industrial-yellow text-industrial-dark px-4 py-3 font-bold text-center hover:bg-yellow-400 transition-colors"
                         >
                             سجل الآن
                         </button>

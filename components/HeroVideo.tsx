@@ -50,8 +50,8 @@ const HeroVideo: React.FC = () => {
             />
 
             {/* Ambient Glow */}
-            <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-yellow-500/10 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-            <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] translate-x-1/2 translate-y-1/2 pointer-events-none" />
+            <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-yellow-500/10  blur-[100px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+            <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/10  blur-[100px] translate-x-1/2 translate-y-1/2 pointer-events-none" />
 
             {/* Left Panel - 3D Video Card */}
             <div className="relative w-full lg:w-[45%] h-[50vh] lg:h-screen flex items-center justify-center p-6 lg:p-12 z-10 [perspective:1000px]">
@@ -100,13 +100,13 @@ const HeroVideo: React.FC = () => {
                             style={{ transform: "translateZ(30px)" }}
                             className="absolute bottom-8 left-6 bg-black/60 backdrop-blur-md border border-yellow-500/30 px-4 py-2 rounded-xl flex items-center gap-2"
                         >
-                            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                            <div className="w-2 h-2  bg-green-500 animate-pulse" />
                             <span className="text-white text-sm font-medium">Live Simulation</span>
                         </motion.div>
 
                         {/* Play Button */}
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                            <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <div className="w-20 h-20  bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                 <Play className="text-white w-8 h-8 fill-white" />
                             </div>
                         </div>
