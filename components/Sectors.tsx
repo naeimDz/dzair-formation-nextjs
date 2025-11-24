@@ -16,6 +16,7 @@ const HorizontalCard: React.FC<{ machine: Machine; index: number; onClick: () =>
         <img
           src={machine.imageUrl}
           alt={machine.name}
+          loading="lazy"
           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
         />
         <div className="absolute top-4 right-4 z-20 bg-industrial-yellow text-black text-xs font-bold px-3 py-1  shadow-md">
@@ -53,6 +54,7 @@ const VerticalCard: React.FC<{ machine: Machine; index: number; onClick: () => v
       <img
         src={machine.imageUrl}
         alt={machine.name}
+        loading="lazy"
         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0"
       />
       <div className="absolute bottom-4 right-4 z-20">
@@ -86,6 +88,7 @@ const CompactCard: React.FC<{ machine: Machine; index: number; onClick: () => vo
       <img
         src={machine.imageUrl}
         alt={machine.name}
+        loading="lazy"
         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
@@ -152,6 +155,7 @@ const SectorItem: React.FC<SectorItemProps> = ({ sector }) => {
           <img
             src={sector.backgroundImage}
             alt={sector.title}
+            loading="lazy"
             className="w-full h-full object-cover grayscale hidden md:block"
           />
         </motion.div>

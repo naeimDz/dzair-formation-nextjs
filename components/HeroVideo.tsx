@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useTransform, useSpring, useMotionValue } from 'framer-motion';
 import { Play, ShieldCheck, Zap } from 'lucide-react';
+import videoBanner from '../assets/videos/video_banner.mp4';
 
 const HeroVideo: React.FC = () => {
     const ref = useRef<HTMLDivElement>(null);
@@ -82,7 +83,7 @@ const HeroVideo: React.FC = () => {
                             playsInline
                             className="absolute inset-0 w-full h-full opacity-80 group-hover:scale-110 transition-transform duration-500"
                         >
-                            <source src="../assets/videos/video_banner.mp4" type="video/mp4" />
+                            <source src={videoBanner} type="video/mp4" />
                         </video>
 
                         {/* Overlays */}

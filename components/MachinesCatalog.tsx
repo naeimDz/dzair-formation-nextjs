@@ -11,7 +11,7 @@ const MachinesCatalog: React.FC = () => {
     const allMachines = machines;
 
     return (
-        <div className="min-h-screen bg-industrial-dark text-white pt-20 pb-20 px-4 md:px-8">
+        <div className="min-h-screen bg-industrial-dark text-white pt-24 md:pt-48 pb-20 px-4 md:px-8">
             {/* Header Section */}
             <div className="max-w-7xl mx-auto mb-12">
                 <Link
@@ -83,7 +83,7 @@ const MachineCard: React.FC<{
                     />
                     {machine.highlight && (
                         <div className="absolute top-4 right-4 z-20 bg-industrial-yellow/90 text-black text-xs font-bold px-3 py-1  backdrop-blur-sm">
-                            {machine.highlight}
+                            {machine.audience}
                         </div>
                     )}
                 </div>

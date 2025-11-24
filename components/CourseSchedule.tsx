@@ -20,7 +20,7 @@ const CourseSchedule: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-industrial-dark text-white pt-24 pb-12 px-4">
+        <div className="min-h-screen bg-industrial-dark text-white pt-24 md:pt-48 pb-12 px-4">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="mb-12">

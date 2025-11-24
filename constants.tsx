@@ -23,6 +23,10 @@ import MiningDumperImg from './assets/images/machines-simulator/Mining dumper.pn
 import MiningShovelImg from './assets/images/machines-simulator/mining_shovel.png';
 import ForkliftImg from './assets/images/machines-simulator/forklift.png';
 import EmptyContainerImg from './assets/images/machines-simulator/Empty_Container_Lift_Trucks.png';
+import BackhoeLoaderImg from './assets/images/machines-simulator/Backhoe_loader.png';
+import MotorGraderImg from './assets/images/machines-simulator/Motor_grader.png';
+import BulldozerImg from './assets/images/machines-simulator/Bulldozer.png';
+import WheelExcavatorImg from './assets/images/machines-simulator/Excavator.png';
 
 export const STATS: Stat[] = [
   { id: 1, value: "1200", label: "ساعة تدريب سنوية", suffix: "+" },
@@ -69,7 +73,7 @@ export const SECTORS: Sector[] = [
         longDescription: "محاكي الحفار الخلفي (باك هو لودر) من  هو أداة تدريب شاملة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على الوعي باستقرار المركبة، والعمل في ظروف الرؤية المنخفضة، وأعمال الردم والتسوية وحفر الخنادق. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة المناورة والإنتاجية.",
         simulatorType: "Backhoe",
         audience: "Professional",
-        imageUrl: "./assets/images/machines-simulator/backhoe_loader.png",
+        imageUrl: BackhoeLoaderImg,
       }
     ]
 
@@ -91,7 +95,7 @@ export const SECTORS: Sector[] = [
         longDescription: "محاكي الممهدة (Motor Grader) من  هو أداة تدريب مصممة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على المناورات المعقدة، وإدارة آليات المفصل، والعمل في التضاريس الوعرة، والعمل مع شاحنة قلابة. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة التسوية والتمهيد.",
         simulatorType: "Other",
         audience: "Professional",
-        imageUrl: "./assets/images/machines-simulator/motor_grader.png",
+        imageUrl: MotorGraderImg,
       },
       {
         id: 'mining-shovel',
@@ -296,13 +300,13 @@ export const machines: Machine[] =
       "longDescription": "محاكي الحفار المجنزر (الزاحف) من  هو الأداة المثالية للتدريب، وهو مناسب للمبتدئين الراغبين في تعلم تشغيل معدات الحفر والبناء، وكذلك للمشغلين الأكثر خبرة. يوفر المحاكي تدريباً متسلسلاً لتعلم المناورات المعقدة خطوة بخطوة، مع التركيز على الالتزام بسلامة المكونات، واحترام مناطق الحفر المحددة، وتحديد موضع الهيكل والدلو الصحيحين، والوعي بالمحيط (المشاة/العوائق). يتميز المحاكي بمنصة ديناميكية وشاشة 4K UHD ووحدات تحكم قابلة للتبديل.",
       "simulatorType": "FrontShovel",
       "audience": "Professional",
-      "imageUrl": "/assets/images/machines-simulator/tracked-excavator.png",
+      "imageUrl": TrackedExcavatorImg,
       "gallery": [
         "/assets/images/tracked-excavator-gallery-1.webp",
         "/assets/images/tracked-excavator-gallery-2.webp"
       ],
       "videoUrl": null,
-      "parallaxAsset": "/assets/images/machines-simulator/tracked-excavator.png",
+      "parallaxAsset": TrackedExcavatorImg,
       "showInHomepage": true,
       "featured": true,
       "durationDays": 10,
@@ -329,13 +333,13 @@ export const machines: Machine[] =
       "longDescription": "محاكي الجرافة (البلدوزر) من  هو حل تدريبي متكامل للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على المناورات المعقدة، وتحديد موضع الشفرة الصحيح، وفهم أنواع التربة المختلفة (غير المستوية، المنحدرة). يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة التسوية والمناورة.",
       "simulatorType": "Other",
       "audience": "Professional",
-      "imageUrl": "/assets/images/bulldozer.webp",
+      "imageUrl": BulldozerImg,
       "gallery": [
         "/assets/images/bulldozer-gallery-1.webp",
         "/assets/images/bulldozer-gallery-2.webp"
       ],
       "videoUrl": null,
-      "parallaxAsset": "/assets/images/bulldozer-parallax.webp",
+      "parallaxAsset": BulldozerImg,
       "showInHomepage": true,
       "featured": false,
       "durationDays": 10,
@@ -361,13 +365,13 @@ export const machines: Machine[] =
       "longDescription": "محاكي الحفار ذو العجلات من  مصمم لتدريب المبتدئين والمشغلين ذوي الخبرة على قيادة معدات البناء الحضرية. يعتمد على نموذج تعليمي متسلسل لتمكين المتدربين من إتقان المناورات المعقدة تدريجياً. يركز على الالتزام بمناطق الحفر المحددة، والتحكم في نقطة الانقلاب، والقيادة الآمنة. يتميز بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم قابلة للتبديل.",
       "simulatorType": "FrontShovel",
       "audience": "Professional",
-      "imageUrl": "/assets/images/wheel-excavator.webp",
+      "imageUrl": WheelExcavatorImg,
       "gallery": [
         "/assets/images/wheel-excavator-gallery-1.webp",
         "/assets/images/wheel-excavator-gallery-2.webp"
       ],
       "videoUrl": null,
-      "parallaxAsset": "/assets/images/wheel-excavator-parallax.webp",
+      "parallaxAsset": WheelExcavatorImg,
       "showInHomepage": false,
       "featured": false,
       "durationDays": 10,
@@ -394,13 +398,13 @@ export const machines: Machine[] =
       "longDescription": "محاكي الحفار الخلفي (باك هو لودر) من  هو أداة تدريب شاملة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على الوعي باستقرار المركبة، والعمل في ظروف الرؤية المنخفضة، وأعمال الردم والتسوية وحفر الخنادق. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة المناورة والإنتاجية.",
       "simulatorType": "Backhoe",
       "audience": "Professional",
-      "imageUrl": "/assets/images/backhoe-loader.webp",
+      "imageUrl": BackhoeLoaderImg,
       "gallery": [
         "/assets/images/backhoe-loader-gallery-1.webp",
         "/assets/images/backhoe-loader-gallery-2.webp"
       ],
       "videoUrl": null,
-      "parallaxAsset": "/assets/images/backhoe-loader-parallax.webp",
+      "parallaxAsset": BackhoeLoaderImg,
       "showInHomepage": true,
       "featured": true,
       "durationDays": 10,
@@ -427,13 +431,13 @@ export const machines: Machine[] =
       "longDescription": "محاكي الرافعة الشوكية CHARLIE™ هو حل تدريبي متكامل يشمل وحدات للرافعة الشوكية المتوازنة (Counterbalance) ورافعة الوصول (Reach Truck). تم تطويره بالتعاون مع خبراء السلامة واللوجستيات، ويركز على المناورات المعقدة، والتعامل مع العوائق، والوقاية من المخاطر، والقيادة في الممرات الضيقة. يتميز المحاكي بشاشات أمامية وخلفية، ونظام اهتزاز، وخيار خوذة الواقع الافتراضي (VR) لتعزيز الانغماس.",
       "simulatorType": "Other",
       "audience": "Professional",
-      "imageUrl": "/assets/images/forklift.webp",
+      "imageUrl": ForkliftImg,
       "gallery": [
         "/assets/images/forklift-gallery-1.webp",
         "/assets/images/forklift-gallery-2.webp"
       ],
       "videoUrl": null,
-      "parallaxAsset": "/assets/images/forklift-parallax.webp",
+      "parallaxAsset": ForkliftImg,
       "showInHomepage": true,
       "featured": true,
       "durationDays": 7,
@@ -460,13 +464,13 @@ export const machines: Machine[] =
       "longDescription": "محاكي شاحنة قلابة التعدين (الدمبر) من  مصمم خصيصاً لتلبية احتياجات التدريب في قطاع التعدين. يوفر المحاكي سيناريوهات واقعية للقيادة في ظروف مواقع التعدين الصعبة، مع التركيز على السلامة، والتحميل والتفريغ الفعال، والتعامل مع المنحدرات. يتميز المحاكي بمنصة ديناميكية ووحدات تحكم طبق الأصل لضمان تجربة تدريب غامرة وفعالة.",
       "simulatorType": "Dumper",
       "audience": "Professional",
-      "imageUrl": "/assets/images/mining-dumper.webp",
+      "imageUrl": MiningDumperImg,
       "gallery": [
         "/assets/images/mining-dumper-gallery-1.webp",
         "/assets/images/mining-dumper-gallery-2.webp"
       ],
       "videoUrl": null,
-      "parallaxAsset": "/assets/images/mining-dumper-parallax.webp",
+      "parallaxAsset": MiningDumperImg,
       "showInHomepage": false,
       "featured": true,
       "durationDays": 14,
@@ -484,39 +488,7 @@ export const machines: Machine[] =
       "seoTitle": "محاكي شاحنة قلابة التعدين للتدريب المهني",
       "seoDescription": "تدريب متقدم على محاكي شاحنة قلابة التعدين. إتقان القيادة الآمنة والفعالة في مواقع التعدين."
     },
-    {
-      "id": "backhoe-loader",
-      "name": "Backhoe Loader Simulator",
-      "highlight": "/machines/backhoe-loader",
-      "shortDescription": "محاكي الحفار الخلفي (باك هو لودر) لتدريب المبتدئين والمحترفين على أعمال الحفر والتحميل.",
-      "longDescription": "محاكي الحفار الخلفي (باك هو لودر) من  هو أداة تدريب شاملة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على الوعي باستقرار المركبة، والعمل في ظروف الرؤية المنخفضة، وأعمال الردم والتسوية وحفر الخنادق. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة المناورة والإنتاجية.",
-      "simulatorType": "Backhoe",
-      "audience": "Professional",
-      "imageUrl": "/assets/images/backhoe-loader.webp",
-      "gallery": [
-        "/assets/images/backhoe-loader-gallery-1.webp",
-        "/assets/images/backhoe-loader-gallery-2.webp"
-      ],
-      "videoUrl": null,
-      "parallaxAsset": "/assets/images/backhoe-loader-parallax.webp",
-      "showInHomepage": true,
-      "featured": true,
-      "durationDays": 10,
-      "difficultyLevel": "intermediate",
-      "skills": [
-        "معرفة الماكينة",
-        "المناورة الدقيقة",
-        "تتبع مسار الدلو",
-        "الردم والتسوية وحفر الخنادق",
-        "الإنتاجية",
-        "الصعود والنزول من الناقل بأمان"
-      ],
-      "certificate": true,
-      "simulationType": "cockpit",
-      "suitableForCompanies": true,
-      "seoTitle": "محاكي الحفار الخلفي (باك هو لودر) للتدريب المهني",
-      "seoDescription": "تدريب متقدم على محاكي الحفار الخلفي. إتقان أعمال الحفر والتحميل والردم بأمان ودقة."
-    },
+
     {
       "id": "motor-grader",
       "name": "Motor Grader Simulator",
@@ -525,13 +497,13 @@ export const machines: Machine[] =
       "longDescription": "محاكي الممهدة (Motor Grader) من  هو أداة تدريب مصممة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على المناورات المعقدة، وإدارة آليات المفصل، والعمل في التضاريس الوعرة، والعمل مع شاحنة قلابة. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة التسوية والتمهيد.",
       "simulatorType": "Other",
       "audience": "Professional",
-      "imageUrl": "/assets/images/motor-grader.webp",
+      "imageUrl": MotorGraderImg,
       "gallery": [
         "/assets/images/motor-grader-gallery-1.webp",
         "/assets/images/motor-grader-gallery-2.webp"
       ],
       "videoUrl": null,
-      "parallaxAsset": "/assets/images/motor-grader-parallax.webp",
+      "parallaxAsset": MotorGraderImg,
       "showInHomepage": false,
       "featured": false,
       "durationDays": 10,
@@ -549,37 +521,6 @@ export const machines: Machine[] =
       "seoTitle": "محاكي الممهدة (Motor Grader) للتدريب على معدات الأشغال العامة",
       "seoDescription": "تدريب متقدم على محاكي الممهدة. إتقان أعمال التسوية والتمهيد الدقيقة والعمل الآمن في مواقع البناء."
     },
-    {
-      "id": "bulldozer",
-      "name": "Bulldozer Simulator",
-      "highlight": "/machines/bulldozer",
-      "shortDescription": "محاكي الجرافة (البلدوزر) هو أداة تدريب مصممة للمبتدئين والمشغلين ذوي الخبرة في أعمال تسوية التربة.",
-      "longDescription": "محاكي الجرافة (البلدوزر) من  هو حل تدريبي متكامل للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على المناورات المعقدة، وتحديد موضع الشفرة الصحيح، وفهم أنواع التربة المختلفة (غير المستوية، المنحدرة). يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة التسوية والمناورة.",
-      "simulatorType": "Other",
-      "audience": "Professional",
-      "imageUrl": "/assets/images/bulldozer.webp",
-      "gallery": [
-        "/assets/images/bulldozer-gallery-1.webp",
-        "/assets/images/bulldozer-gallery-2.webp"
-      ],
-      "videoUrl": null,
-      "parallaxAsset": "/assets/images/bulldozer-parallax.webp",
-      "showInHomepage": true,
-      "featured": false,
-      "durationDays": 10,
-      "difficultyLevel": "intermediate",
-      "skills": [
-        "معرفة الماكينة",
-        "المناورة الدقيقة",
-        "تحديد موضع الشفرة وتثبيتها",
-        "دقة التسوية",
-        "الصعود والنزول من الناقل بأمان"
-      ],
-      "certificate": true,
-      "simulationType": "cockpit",
-      "suitableForCompanies": true,
-      "seoTitle": "محاكي الجرافة (البلدوزر) للتدريب على معدات الأشغال العامة",
-      "seoDescription": "تدريب واقعي على محاكي الجرافة. إتقان المناورات المعقدة، التسوية الدقيقة، والعمل الآمن في مواقع البناء."
-    }
+
   ]
 

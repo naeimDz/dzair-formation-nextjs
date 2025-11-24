@@ -83,7 +83,7 @@ const MachineDetail: React.FC = () => {
                     >
                         <Link
                             to="/machines"
-                            className="absolute top-24 right-8 md:top-8 flex items-center text-gray-300 hover:text-white transition-colors z-50"
+                            className="absolute top-24 right-8 md:top-56 flex items-center text-gray-300 hover:text-white transition-colors z-50"
                         >
                             <ArrowRight className="ml-2" /> العودة للكتالوغ
                         </Link>

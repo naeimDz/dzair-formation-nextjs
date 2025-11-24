@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
     <>
       {/* CTA Section */}
 
-      <footer id="contact_footer" className="bg-industrial-dark text-white pt-24 pb-12 border-t border-gray-800">
+      <footer id="contact_footer" className="bg-industrial-dark text-white pt-24 md:pt-48 pb-12 border-t border-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
             {/* Contact Info */}
