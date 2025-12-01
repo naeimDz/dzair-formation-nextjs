@@ -31,7 +31,7 @@ const HeroParallax: React.FC = () => {
 
 
                 {/* Overlay: 60% opacity + 3px blur */}
-                <div className="absolute inset-0 bg-black/20 z-10" />
+                <div className="absolute inset-0z-10" />
 
                 {/* Main Video */}
                 <video
@@ -39,7 +39,7 @@ const HeroParallax: React.FC = () => {
                     loop
                     muted
                     playsInline
-                    className="relative z-0 w-full h-auto md:absolute md:inset-0 md:h-full md:object-cover saturate-50" // Low saturation
+                    className="relative z-0 w-full h-auto md:absolute md:inset-0 md:h-full md:object-cover" // ffor Low saturation add  saturate-50 
                 >
                     <source src={videoBanner} type="video/mp4" />
                     Your browser does not support the video tag.
