@@ -297,15 +297,18 @@ export const machines: Machine[] =
       "name": "Tracked Excavator Simulator",
       "highlight": "/machines/tracked-excavator",
       "shortDescription": "محاكي الحفار المجنزر (الزاحف) هو الأداة المثالية لتدريب المبتدئين والمحترفين على تشغيل معدات الحفر والبناء.",
-      "longDescription": "محاكي الحفار المجنزر (الزاحف) من Acreos هو الأداة المثالية للتدريب، وهو مناسب للمبتدئين الراغبين في تعلم تشغيل معدات الحفر والبناء، وكذلك للمشغلين الأكثر خبرة. يوفر المحاكي تدريباً متسلسلاً لتعلم المناورات المعقدة خطوة بخطوة، مع التركيز على الالتزام بسلامة المكونات، واحترام مناطق الحفر المحددة، وتحديد موضع الهيكل والدلو الصحيحين، والوعي بالمحيط (المشاة/العوائق). يتميز المحاكي بمنصة ديناميكية وشاشة 4K UHD ووحدات تحكم قابلة للتبديل.",
+      "longDescription": "محاكي الحفار المجنزر (الزاحف)  هو الأداة المثالية للتدريب، وهو مناسب للمبتدئين الراغبين في تعلم تشغيل معدات الحفر والبناء، وكذلك للمشغلين الأكثر خبرة. يوفر المحاكي تدريباً متسلسلاً لتعلم المناورات المعقدة خطوة بخطوة، مع التركيز على الالتزام بسلامة المكونات، واحترام مناطق الحفر المحددة، وتحديد موضع الهيكل والدلو الصحيحين، والوعي بالمحيط (المشاة/العوائق). يتميز المحاكي بمنصة ديناميكية وشاشة 4K UHD ووحدات تحكم قابلة للتبديل.",
       "simulatorType": "FrontShovel",
       "audience": "Professional",
       "imageUrl": TrackedExcavatorImg,
       "gallery": [
-        "/assets/images/tracked-excavator-gallery-1.webp",
-        "/assets/images/tracked-excavator-gallery-2.webp"
+        "/assets/images/gallery-machines/tracked-excavator-gallery_1.jpg",
+        "/assets/images/gallery-machines/tracked-excavator-gallery_2.jpg",
+        "/assets/images/gallery-machines/tracked-excavator-gallery_3.jpg",
+        "/assets/images/gallery-machines/tracked-excavator-gallery_4.jpg",
+        "/assets/images/gallery-machines/tracked-excavator-gallery_5.jpg",
       ],
-      "videoUrl": null,
+      "videoUrl": "https://www.youtube.com/watch?v=W9CkeXCMrq0",
       "parallaxAsset": TrackedExcavatorImg,
       "showInHomepage": true,
       "featured": true,
@@ -323,20 +326,28 @@ export const machines: Machine[] =
       "simulationType": "cockpit",
       "suitableForCompanies": true,
       "seoTitle": "محاكي الحفار المجنزر (الزاحف) للتدريب المهني",
-      "seoDescription": "تدريب متقدم على محاكي الحفار المجنزر من Acreos. تعلم المناورات المعقدة والالتزام بالسلامة في بيئة افتراضية واقعية."
+      "seoDescription": "تدريب متقدم على محاكي الحفار المجنزر . تعلم المناورات المعقدة والالتزام بالسلامة في بيئة افتراضية واقعية."
     },
     {
       "id": "wheel-excavator",
       "name": "Wheel Excavator Simulator",
       "highlight": "/machines/wheel-excavator",
       "shortDescription": "محاكي الحفار ذو العجلات مناسب لتدريب المبتدئين والمحترفين على تشغيل معدات البناء الحضرية.",
-      "longDescription": "محاكي الحفار ذو العجلات من Acreos مصمم لتدريب المبتدئين والمشغلين ذوي الخبرة على قيادة معدات البناء الحضرية. يعتمد على نموذج تعليمي متسلسل لتمكين المتدربين من إتقان المناورات المعقدة تدريجياً. يركز على الالتزام بمناطق الحفر المحددة، والتحكم في نقطة الانقلاب، والقيادة الآمنة. يتميز بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم قابلة للتبديل.",
+      "longDescription": "محاكي الحفار ذو العجلات  مصمم لتدريب المبتدئين والمشغلين ذوي الخبرة على قيادة معدات البناء الحضرية. يعتمد على نموذج تعليمي متسلسل لتمكين المتدربين من إتقان المناورات المعقدة تدريجياً. يركز على الالتزام بمناطق الحفر المحددة، والتحكم في نقطة الانقلاب، والقيادة الآمنة. يتميز بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم قابلة للتبديل.",
       "simulatorType": "FrontShovel",
       "audience": "Professional",
       "imageUrl": WheelExcavatorImg,
       "gallery": [
-        "/assets/images/wheel-excavator-gallery-1.webp",
-        "/assets/images/wheel-excavator-gallery-2.webp"
+        "/assets/images/gallery-machines/wheel-excavator-gallery_1.jpg",
+        "/assets/images/gallery-machines/wheel-excavator-gallery_2.jpg",
+
+        "/assets/images/gallery-machines/wheel-excavator-gallery_3.jpg",
+
+        "/assets/images/gallery-machines/wheel-excavator-gallery_4.jpg",
+
+        "/assets/images/gallery-machines/wheel-excavator-gallery_5.jpg",
+
+
       ],
       "videoUrl": null,
       "parallaxAsset": WheelExcavatorImg,
@@ -366,20 +377,35 @@ export const machines: Machine[] =
       "highlight": "التوازن أثناء الرفع والمناورة تحت الحمولة",
       "longDescription": "تعلم فنون المناورة باللودر ذو العجلات، بدءاً من تحميل الشاحنات بدقة وسرعة، وصولاً إلى إدارة مخزون المواد الأولية في المحاجر ومواقع البناء. يشمل التدريب تقنيات القيادة الاقتصادية والحفاظ على توازن الآلة أثناء حمل الأوزان الثقيلة.",
       "simulatorType": "Other",
-      "audience": "Intermediate"
+      "audience": "Intermediate",
+      "gallery": [
+        "/assets/images/gallery-machines/wheel-loader-gallery_1.jpg",
+        "/assets/images/gallery-machines/wheel-loader-gallery_2.jpg",
+        "/assets/images/gallery-machines/wheel-loader-gallery_3.jpg",
+        "/assets/images/gallery-machines/wheel-loader-gallery_4.jpg",
+        "/assets/images/gallery-machines/wheel-loader-gallery_5.jpg",
+
+      ],
     },
     {
       "id": "backhoe-loader",
       "name": "Backhoe Loader Simulator",
       "highlight": "/machines/backhoe-loader",
       "shortDescription": "محاكي الحفار الخلفي (باك هو لودر) لتدريب المبتدئين والمحترفين على أعمال الحفر والتحميل.",
-      "longDescription": "محاكي الحفار الخلفي (باك هو لودر) من Acreos هو أداة تدريب شاملة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على الوعي باستقرار المركبة، والعمل في ظروف الرؤية المنخفضة، وأعمال الردم والتسوية وحفر الخنادق. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة المناورة والإنتاجية.",
+      "longDescription": "محاكي الحفار الخلفي (باك هو لودر)  هو أداة تدريب شاملة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على الوعي باستقرار المركبة، والعمل في ظروف الرؤية المنخفضة، وأعمال الردم والتسوية وحفر الخنادق. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة المناورة والإنتاجية.",
       "simulatorType": "Backhoe",
       "audience": "Professional",
       "imageUrl": BackhoeLoaderImg,
       "gallery": [
-        "/assets/images/backhoe-loader-gallery-1.webp",
-        "/assets/images/backhoe-loader-gallery-2.webp"
+        "/assets/images/gallery-machines/backhoe-loader-gallery_1.jpg",
+        "/assets/images/gallery-machines/backhoe-loader-gallery_2.jpg",
+
+        "/assets/images/gallery-machines/backhoe-loader-gallery_3.jpg",
+
+        "/assets/images/gallery-machines/backhoe-loader-gallery_4.jpg",
+
+        "/assets/images/gallery-machines/backhoe-loader-gallery_5.jpg",
+
       ],
       "videoUrl": null,
       "parallaxAsset": BackhoeLoaderImg,
@@ -406,14 +432,10 @@ export const machines: Machine[] =
       "name": "Bulldozer Simulator",
       "highlight": "/machines/bulldozer",
       "shortDescription": "محاكي الجرافة (البلدوزر) هو أداة تدريب مصممة للمبتدئين والمشغلين ذوي الخبرة في أعمال تسوية التربة.",
-      "longDescription": "محاكي الجرافة (البلدوزر) من Acreos هو حل تدريبي متكامل للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على المناورات المعقدة، وتحديد موضع الشفرة الصحيح، وفهم أنواع التربة المختلفة (غير المستوية، المنحدرة). يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة التسوية والمناورة.",
+      "longDescription": "محاكي الجرافة (البلدوزر)  هو حل تدريبي متكامل للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على المناورات المعقدة، وتحديد موضع الشفرة الصحيح، وفهم أنواع التربة المختلفة (غير المستوية، المنحدرة). يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة التسوية والمناورة.",
       "simulatorType": "Other",
       "audience": "Professional",
       "imageUrl": BulldozerImg,
-      "gallery": [
-        "/assets/images/bulldozer-gallery-1.webp",
-        "/assets/images/bulldozer-gallery-2.webp"
-      ],
       "videoUrl": null,
       "parallaxAsset": BulldozerImg,
       "showInHomepage": true,
@@ -438,13 +460,16 @@ export const machines: Machine[] =
       "name": "Motor Grader Simulator",
       "highlight": "/machines/motor-grader",
       "shortDescription": "محاكي الممهدة (Motor Grader) لتدريب المبتدئين والمحترفين على أعمال التسوية وتمهيد الطرق.",
-      "longDescription": "محاكي الممهدة (Motor Grader) من Acreos هو أداة تدريب مصممة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على المناورات المعقدة، وإدارة آليات المفصل، والعمل في التضاريس الوعرة، والعمل مع شاحنة قلابة. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة التسوية والتمهيد.",
+      "longDescription": "محاكي الممهدة (Motor Grader)  هو أداة تدريب مصممة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على المناورات المعقدة، وإدارة آليات المفصل، والعمل في التضاريس الوعرة، والعمل مع شاحنة قلابة. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة التسوية والتمهيد.",
       "simulatorType": "Other",
       "audience": "Professional",
       "imageUrl": MotorGraderImg,
       "gallery": [
-        "/assets/images/motor-grader-gallery-1.webp",
-        "/assets/images/motor-grader-gallery-2.webp"
+        "/assets/images/gallery-machines/motor-grader-gallery_1.jpg",
+        "/assets/images/gallery-machines/motor-grader-gallery_2.jpg",
+        "/assets/images/gallery-machines/motor-grader-gallery_3.jpg",
+        "/assets/images/gallery-machines/motor-grader-gallery_4.jpg",
+        "/assets/images/gallery-machines/motor-grader-gallery_5.jpg",
       ],
       "videoUrl": null,
       "parallaxAsset": MotorGraderImg,
@@ -475,8 +500,11 @@ export const machines: Machine[] =
       "audience": "Professional",
       "imageUrl": ForkliftImg,
       "gallery": [
-        "/assets/images/forklift-gallery-1.webp",
-        "/assets/images/forklift-gallery-2.webp"
+        "/assets/images/gallery-machines/forklift-gallery_1.png",
+        "/assets/images/gallery-machines/forklift-gallery_2.png",
+        "/assets/images/gallery-machines/forklift-gallery_3.png",
+        "/assets/images/gallery-machines/forklift-gallery_4.png",
+        "/assets/images/gallery-machines/forklift-gallery_5.png",
       ],
       "videoUrl": null,
       "parallaxAsset": ForkliftImg,
@@ -503,6 +531,13 @@ export const machines: Machine[] =
       "name": "رافعة الحاويات الفارغة",
       "shortDescription": "تدريب عملي على تشغيل رافعات الحاويات الفارغة داخل ساحات التخزين، مع التركيز على التكديس العالي والمناورة الدقيقة.",
       "imageUrl": EmptyContainerImg,
+      "gallery": [
+        "/assets/images/gallery-machines/empty-container-gallery_1.jpg",
+        "/assets/images/gallery-machines/empty-container-gallery_2.jpg",
+        "/assets/images/gallery-machines/empty-container-gallery_3.jpg",
+        "/assets/images/gallery-machines/empty-container-gallery_4.jpg",
+        "/assets/images/gallery-machines/empty-container-gallery_5.jpg",
+      ],
       "highlight": "دقة الاصطفاف وتثبيت الحاوية عند الارتفاع",
       "longDescription": "احتراف مناولة الحاويات الفارغة في الموانئ الجافة والبحرية. يركز التدريب على سرعة المناولة، التكديس العمودي حتى 7 أو 8 طوابق، ومقاومة تأثير الرياح أثناء العمليات لضمان استقرار الأكداس.",
       "simulatorType": "Other",
@@ -513,6 +548,13 @@ export const machines: Machine[] =
       "name": "حفّارة منجمية (Shovel)",
       "shortDescription": "تشغيل حفّارات التعدين الكبيرة لاقتلاع ونقل الكتل الصخرية بكفاءة وأمان.",
       "imageUrl": MiningShovelImg,
+      "gallery": [
+        "/assets/images/gallery-machines/mining-shovel-gallery_1.jpg",
+        "/assets/images/gallery-machines/mining-shovel-gallery_2.jpg",
+        "/assets/images/gallery-machines/mining-shovel-gallery_3.jpg",
+        "/assets/images/gallery-machines/mining-shovel-gallery_4.jpg",
+        "/assets/images/gallery-machines/mining-shovel-gallery_5.jpg",
+      ],
       "highlight": "التحكم في الذراع والدلو داخل بيئات ضيقة",
       "longDescription": "التخصص في تشغيل حفارات التعدين الكبيرة لاقتلاع ونقل الكتل الصخرية بكفاءة وأمان. يغطي التدريب استراتيجيات التحميل الفعال للشاحنات المنجمية، إدارة واجهة الحفر (Face Management)، وتقليل دورة التحميل لزيادة الإنتاجية.",
       "simulatorType": "FrontShovel",

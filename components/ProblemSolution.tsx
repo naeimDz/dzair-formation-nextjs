@@ -42,7 +42,7 @@ export default function ProblemSolution() {
                                 <ShieldCheck className="w-8 h-8 text-primary" />
                             </div>
                             <h2 className="text-3xl md:text-4xl font-bold text-white">
-                                الحل مع SimuTech <br />
+                                الحل مع مدرستنا <br />
                                 <span className="text-primary glow-text">أمان وكفاءة قصوى</span>
                             </h2>
 

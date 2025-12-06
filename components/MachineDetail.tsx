@@ -12,6 +12,9 @@ import {
 } from 'lucide-react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { machines } from '../constants';
+import YouTubeEmbed from './YouTubeEmbed';
+import HSE from './HSE';
+
 
 const MachineDetail: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -158,26 +161,37 @@ const MachineDetail: React.FC = () => {
                 <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
                     <div className="relative group">
                         <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-3xl opacity-30 group-hover:opacity-50 blur-xl transition-opacity duration-500" />
-                        <div className="relative rounded-2xl overflow-hidden border border-blue-500/30 shadow-2xl">
-                            <img
-                                src={machine.imageUrl}
-                                alt="Simulation Interface"
-                                className="w-full object-cover filter contrast-125 brightness-90"
-                            />
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="w-20 h-20 bg-white/10 backdrop-blur-md  flex items-center justify-center border border-white/30 cursor-pointer hover:scale-110 transition-transform">
-                                    <Play size={32} className="text-white fill-white" />
-                                </div>
-                            </div>
+                        <div className="relative rounded-2xl overflow-hidden border border-blue-500/30 shadow-2xl bg-black aspect-video">
+                            {machine.videoUrl ? (
+                                <YouTubeEmbed
+                                    videoId={machine.videoUrl}
+                                    thumbnailUrl={machine.parallaxAsset}
+                                    title={`محاكاة ${machine.name}`}
+                                />
+                            ) : (
+                                // Fallback to old view if no video URL is present (or show a placeholder)
+                                <>
+                                    <img
+                                        src={machine.parallaxAsset}
+                                        alt="Simulation Interface"
+                                        className="w-full h-full object-cover filter contrast-125 brightness-90"
+                                    />
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <div className="w-20 h-20 bg-white/10 backdrop-blur-md  flex items-center justify-center border border-white/30 cursor-pointer hover:scale-110 transition-transform">
+                                            <Play size={32} className="text-white fill-white" />
+                                        </div>
+                                    </div>
 
-                            {/* AI Feedback Overlay Mockup */}
-                            <div className="absolute bottom-6 right-6 bg-black/80 backdrop-blur-md border border-red-500/50 p-4 rounded-xl max-w-xs">
-                                <div className="flex items-center gap-2 text-red-400 font-bold text-sm mb-1">
-                                    <BrainCircuit size={16} />
-                                    <span>تنبيه AI</span>
-                                </div>
-                                <p className="text-white text-sm">انحراف 12° — الميل غير آمن. حاول تعديل المسار.</p>
-                            </div>
+                                    {/* AI Feedback Overlay Mockup - Responsive Fix */}
+                                    <div className="absolute bottom-2 right-2 md:bottom-6 md:right-6 bg-black/80 backdrop-blur-md border border-red-500/50 p-2 md:p-4 rounded-lg md:rounded-xl max-w-[200px] md:max-w-xs z-20 pointer-events-none">
+                                        <div className="flex items-center gap-2 text-red-400 font-bold text-xs md:text-sm mb-1">
+                                            <BrainCircuit size={14} className="md:w-4 md:h-4" />
+                                            <span>تنبيه AI</span>
+                                        </div>
+                                        <p className="text-white text-[10px] md:text-sm leading-tight">انحراف 12° — الميل غير آمن. حاول التعديل.</p>
+                                    </div>
+                                </>
+                            )}
                         </div>
                     </div>
 
@@ -313,7 +327,7 @@ const MachineDetail: React.FC = () => {
                     </div>
                 </div>
             </section>
-
+            <HSE />
             {/* 8) Final CTA */}
             <section id="register" className="py-24 px-6 bg-industrial-yellow text-black text-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-pattern opacity-10" />
