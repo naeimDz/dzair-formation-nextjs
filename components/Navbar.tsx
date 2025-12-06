@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Home, Calendar, Wrench, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/logo-tight.svg';
-//import logo from '../assets/images/fiinale-finale2.png';
+//import logo from '../assets/logo-tight.svg';
+import logo from '../assets/images/dzair.png';
 import NavbarDesktop from './navbar/NavbarDesktop';
 import NavbarMobile from './navbar/NavbarMobile';
 
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
                             <img
                                 src={logo}
                                 alt="Dzair Formation"
-                                className={`object-contain transition-all duration-300 ${isScrolled ? 'h-24' : 'h-[120px]'
+                                className={`object-contain transition-all duration-300 ${isScrolled ? 'h-28' : 'h-[140px]'
                                     }`}
                             />
                         </Link>
