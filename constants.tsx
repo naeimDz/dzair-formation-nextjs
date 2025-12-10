@@ -12,21 +12,7 @@ import {
 } from 'lucide-react';
 import { Sector, Stat, HSEPoint, FAQItem, Benefits, Machine } from './types';
 
-import PublicWorksBg from './assets/images/parallax/public-works.jpg';
-import MiningBg from './assets/images/parallax/mining.jpg';
-import LogisticsBg from './assets/images/parallax/logistics.webp';
-
-import TrackedExcavatorImg from './assets/images/machines-simulator/tracked-excavator.png';
-import WheelLoaderImg from './assets/images/machines-simulator/wheel_loader.png';
-import DumpTruckImg from './assets/images/machines-simulator/dump_truck.png';
-import MiningDumperImg from './assets/images/machines-simulator/Mining dumper.png';
-import MiningShovelImg from './assets/images/machines-simulator/mining_shovel.png';
-import ForkliftImg from './assets/images/machines-simulator/forklift.png';
-import EmptyContainerImg from './assets/images/machines-simulator/Empty_Container_Lift_Trucks.png';
-import BackhoeLoaderImg from './assets/images/machines-simulator/Backhoe_loader.png';
-import MotorGraderImg from './assets/images/machines-simulator/Motor_grader.png';
-import BulldozerImg from './assets/images/machines-simulator/Bulldozer.png';
-import WheelExcavatorImg from './assets/images/machines-simulator/Excavator.png';
+import { Images } from './assets/images';
 
 export const STATS: Stat[] = [
   { id: 1, value: "1200", label: "ساعة تدريب سنوية", suffix: "+" },
@@ -43,13 +29,13 @@ export const SECTORS: Sector[] = [
     extra_description: 'مسار تكويني مخصص لمعدّات الأشغال العمومية:رافعات برجية، رافعات مجنزرة، حفّارات، جرافات… يتعلم المتدرّب التحكم، إجراءات الأمان، قراءة مخططات الرفع، والتعامل مع البيئات المعقدة داخل المحاكاة.',
     icon: HardHat,
     color: 'bg-yellow-600',
-    backgroundImage: PublicWorksBg,
+    backgroundImage: Images.PublicWorksBg,
     machines: [
       {
         id: 'tracked-excavator',
         name: 'حفّارة مجنزرة',
         shortDescription: 'تكوين عملي على تشغيل الحفّارات المجنزرة في أعمال الحفر العميق والتفريغ داخل الورشات والبيئات الصعبة.',
-        imageUrl: TrackedExcavatorImg,
+        imageUrl: Images.TrackedExcavatorImg,
         highlight: 'التحكم الدقيق في الذراع والدلو على تضاريس غير مستقرة',
         longDescription: 'برنامج تدريبي شامل يغطي تقنيات الحفر المتقدمة، بما في ذلك حفر الخنادق، تسوية الأراضي، والتعامل مع التربة الصخرية والطينية. يركز التدريب على التنسيق بين حركة الجنزير ودوران المقصورة لضمان أقصى كفاءة وأمان في مواقع العمل الضيقة.',
         simulatorType: 'Backhoe',
@@ -59,7 +45,7 @@ export const SECTORS: Sector[] = [
         id: 'wheel-loader',
         name: 'لودر بعجلات',
         shortDescription: 'مناولة ونقل المواد الردمية بسرعة وكفاءة، مع التحكم في الرفع والتفريغ داخل المساحات الضيقة.',
-        imageUrl: WheelLoaderImg,
+        imageUrl: Images.WheelLoaderImg,
         highlight: 'التوازن أثناء الرفع والمناورة تحت الحمولة',
         longDescription: 'تعلم فنون المناورة باللودر ذو العجلات، بدءاً من تحميل الشاحنات بدقة وسرعة، وصولاً إلى إدارة مخزون المواد الأولية في المحاجر ومواقع البناء. يشمل التدريب تقنيات القيادة الاقتصادية والحفاظ على توازن الآلة أثناء حمل الأوزان الثقيلة.',
         simulatorType: 'Other',
@@ -73,7 +59,7 @@ export const SECTORS: Sector[] = [
         longDescription: "محاكي الحفار الخلفي (باك هو لودر) من  هو أداة تدريب شاملة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على الوعي باستقرار المركبة، والعمل في ظروف الرؤية المنخفضة، وأعمال الردم والتسوية وحفر الخنادق. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة المناورة والإنتاجية.",
         simulatorType: "Backhoe",
         audience: "Professional",
-        imageUrl: BackhoeLoaderImg,
+        imageUrl: Images.BackhoeLoaderImg,
       }
     ]
 
@@ -85,7 +71,7 @@ export const SECTORS: Sector[] = [
     extra_description: 'تدريب على معدات الحفر والاستخراج: حفّارات عملاقة، شاحنات التعدين، الكسارات… التركيز على: العمل في بيئات خطرة، تحليل المخاطر، التحكم في الآلات الثقيلة تحت ضغط، والملاحة داخل مواقع التعدين.',
     icon: Cog, // Using Cog as a generic industrial icon
     color: 'bg-stone-700',
-    backgroundImage: MiningBg,
+    backgroundImage: Images.MiningBg,
     machines: [
       {
         id: "motor-grader",
@@ -95,13 +81,13 @@ export const SECTORS: Sector[] = [
         longDescription: "محاكي الممهدة (Motor Grader) من  هو أداة تدريب مصممة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على المناورات المعقدة، وإدارة آليات المفصل، والعمل في التضاريس الوعرة، والعمل مع شاحنة قلابة. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة التسوية والتمهيد.",
         simulatorType: "Other",
         audience: "Professional",
-        imageUrl: MotorGraderImg,
+        imageUrl: Images.MotorGraderImg,
       },
       {
         id: 'mining-shovel',
         name: 'حفّارة منجمية (Shovel)',
         shortDescription: 'تشغيل حفّارات التعدين الكبيرة لاقتلاع ونقل الكتل الصخرية بكفاءة وأمان.',
-        imageUrl: MiningShovelImg,
+        imageUrl: Images.MiningShovelImg,
         highlight: 'التحكم في الذراع والدلو داخل بيئات ضيقة',
         longDescription: 'التخصص في تشغيل حفارات التعدين الكبيرة لاقتلاع ونقل الكتل الصخرية بكفاءة وأمان. يغطي التدريب استراتيجيات التحميل الفعال للشاحنات المنجمية، إدارة واجهة الحفر (Face Management)، وتقليل دورة التحميل لزيادة الإنتاجية.',
         simulatorType: 'FrontShovel',
@@ -118,13 +104,13 @@ export const SECTORS: Sector[] = [
     extra_description: 'تكوين متخصص في معدات المناولة داخل الموانئ والمستودعات: من Reach Stackers ورافعات RTG/STS إلى الرافعات الشوكية وأنظمة التخزين العالي. يتدرّب المتكوّن على سيناريوهات تحميل وتفريغ الحاويات، تنظيم الحركة داخل الأرصفة والمخازن، إدارة المسارات، وتطبيق بروتوكولات الأمان لضمان انسيابية البضائع عبر كامل سلسلة التوريد.',
     icon: Anchor,
     color: 'bg-blue-800',
-    backgroundImage: LogisticsBg,
+    backgroundImage: Images.LogisticsBg,
     machines: [
       {
         id: 'forklift',
         name: 'الرافعة الشوكية',
         shortDescription: 'المناورة الدقيقة، التكديس العمودي الآمن، وإدارة المخزون.',
-        imageUrl: ForkliftImg,
+        imageUrl: Images.ForkliftImg,
         highlight: 'تحدي المساحات الضيقة',
         longDescription: 'أساسيات وعمليات الرافعات الشوكية في المستودعات الحديثة. يتعلم المتدرب كيفية التعامل مع الأحمال غير المستقرة، التكديس في الرفوف العالية، والمناورة في الممرات الضيقة مع الحفاظ على سلامة البضائع والمشاة.',
         simulatorType: 'Other',
@@ -134,7 +120,7 @@ export const SECTORS: Sector[] = [
         id: 'empty-container',
         name: 'رافعة الحاويات الفارغة',
         shortDescription: 'تدريب عملي على تشغيل رافعات الحاويات الفارغة داخل ساحات التخزين، مع التركيز على التكديس العالي والمناورة الدقيقة.',
-        imageUrl: EmptyContainerImg,
+        imageUrl: Images.EmptyContainerImg,
         highlight: 'دقة الاصطفاف وتثبيت الحاوية عند الارتفاع',
         longDescription: 'احتراف مناولة الحاويات الفارغة في الموانئ الجافة والبحرية. يركز التدريب على سرعة المناولة، التكديس العمودي حتى 7 أو 8 طوابق، ومقاومة تأثير الرياح أثناء العمليات لضمان استقرار الأكداس.',
         simulatorType: 'Other',
@@ -300,16 +286,10 @@ export const machines: Machine[] =
       "longDescription": "محاكي الحفار المجنزر (الزاحف)  هو الأداة المثالية للتدريب، وهو مناسب للمبتدئين الراغبين في تعلم تشغيل معدات الحفر والبناء، وكذلك للمشغلين الأكثر خبرة. يوفر المحاكي تدريباً متسلسلاً لتعلم المناورات المعقدة خطوة بخطوة، مع التركيز على الالتزام بسلامة المكونات، واحترام مناطق الحفر المحددة، وتحديد موضع الهيكل والدلو الصحيحين، والوعي بالمحيط (المشاة/العوائق). يتميز المحاكي بمنصة ديناميكية وشاشة 4K UHD ووحدات تحكم قابلة للتبديل.",
       "simulatorType": "FrontShovel",
       "audience": "Professional",
-      "imageUrl": TrackedExcavatorImg,
-      "gallery": [
-        "/assets/images/gallery-machines/tracked-excavator-gallery_1.jpg",
-        "/assets/images/gallery-machines/tracked-excavator-gallery_2.jpg",
-        "/assets/images/gallery-machines/tracked-excavator-gallery_3.jpg",
-        "/assets/images/gallery-machines/tracked-excavator-gallery_4.jpg",
-        "/assets/images/gallery-machines/tracked-excavator-gallery_5.jpg",
-      ],
+      "imageUrl": Images.TrackedExcavatorImg,
+      "gallery": Images.TrackedExcavatorGallery,
       "videoUrl": "https://www.youtube.com/watch?v=W9CkeXCMrq0",
-      "parallaxAsset": TrackedExcavatorImg,
+      "parallaxAsset": Images.TrackedExcavatorImg,
       "showInHomepage": true,
       "featured": true,
       "durationDays": 10,
@@ -336,21 +316,10 @@ export const machines: Machine[] =
       "longDescription": "محاكي الحفار ذو العجلات  مصمم لتدريب المبتدئين والمشغلين ذوي الخبرة على قيادة معدات البناء الحضرية. يعتمد على نموذج تعليمي متسلسل لتمكين المتدربين من إتقان المناورات المعقدة تدريجياً. يركز على الالتزام بمناطق الحفر المحددة، والتحكم في نقطة الانقلاب، والقيادة الآمنة. يتميز بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم قابلة للتبديل.",
       "simulatorType": "FrontShovel",
       "audience": "Professional",
-      "imageUrl": WheelExcavatorImg,
-      "gallery": [
-        "/assets/images/gallery-machines/wheel-excavator-gallery_1.jpg",
-        "/assets/images/gallery-machines/wheel-excavator-gallery_2.jpg",
-
-        "/assets/images/gallery-machines/wheel-excavator-gallery_3.jpg",
-
-        "/assets/images/gallery-machines/wheel-excavator-gallery_4.jpg",
-
-        "/assets/images/gallery-machines/wheel-excavator-gallery_5.jpg",
-
-
-      ],
+      "imageUrl": Images.WheelExcavatorImg,
+      "gallery": Images.WheelExcavatorGallery,
       "videoUrl": null,
-      "parallaxAsset": WheelExcavatorImg,
+      "parallaxAsset": Images.WheelExcavatorImg,
       "showInHomepage": false,
       "featured": false,
       "durationDays": 10,
@@ -373,19 +342,12 @@ export const machines: Machine[] =
       "id": "wheel-loader",
       "name": "لودر بعجلات",
       "shortDescription": "مناولة ونقل المواد الردمية بسرعة وكفاءة، مع التحكم في الرفع والتفريغ داخل المساحات الضيقة.",
-      "imageUrl": WheelLoaderImg,
+      "imageUrl": Images.WheelLoaderImg,
       "highlight": "التوازن أثناء الرفع والمناورة تحت الحمولة",
       "longDescription": "تعلم فنون المناورة باللودر ذو العجلات، بدءاً من تحميل الشاحنات بدقة وسرعة، وصولاً إلى إدارة مخزون المواد الأولية في المحاجر ومواقع البناء. يشمل التدريب تقنيات القيادة الاقتصادية والحفاظ على توازن الآلة أثناء حمل الأوزان الثقيلة.",
       "simulatorType": "Other",
       "audience": "Intermediate",
-      "gallery": [
-        "/assets/images/gallery-machines/wheel-loader-gallery_1.jpg",
-        "/assets/images/gallery-machines/wheel-loader-gallery_2.jpg",
-        "/assets/images/gallery-machines/wheel-loader-gallery_3.jpg",
-        "/assets/images/gallery-machines/wheel-loader-gallery_4.jpg",
-        "/assets/images/gallery-machines/wheel-loader-gallery_5.jpg",
-
-      ],
+      "gallery": Images.WheelLoaderGallery,
     },
     {
       "id": "backhoe-loader",
@@ -395,20 +357,10 @@ export const machines: Machine[] =
       "longDescription": "محاكي الحفار الخلفي (باك هو لودر)  هو أداة تدريب شاملة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على الوعي باستقرار المركبة، والعمل في ظروف الرؤية المنخفضة، وأعمال الردم والتسوية وحفر الخنادق. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة المناورة والإنتاجية.",
       "simulatorType": "Backhoe",
       "audience": "Professional",
-      "imageUrl": BackhoeLoaderImg,
-      "gallery": [
-        "/assets/images/gallery-machines/backhoe-loader-gallery_1.jpg",
-        "/assets/images/gallery-machines/backhoe-loader-gallery_2.jpg",
-
-        "/assets/images/gallery-machines/backhoe-loader-gallery_3.jpg",
-
-        "/assets/images/gallery-machines/backhoe-loader-gallery_4.jpg",
-
-        "/assets/images/gallery-machines/backhoe-loader-gallery_5.jpg",
-
-      ],
+      "imageUrl": Images.BackhoeLoaderImg,
+      "gallery": Images.BackhoeLoaderGallery,
       "videoUrl": null,
-      "parallaxAsset": BackhoeLoaderImg,
+      "parallaxAsset": Images.BackhoeLoaderImg,
       "showInHomepage": true,
       "featured": true,
       "durationDays": 10,
@@ -435,9 +387,9 @@ export const machines: Machine[] =
       "longDescription": "محاكي الجرافة (البلدوزر)  هو حل تدريبي متكامل للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على المناورات المعقدة، وتحديد موضع الشفرة الصحيح، وفهم أنواع التربة المختلفة (غير المستوية، المنحدرة). يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة التسوية والمناورة.",
       "simulatorType": "Other",
       "audience": "Professional",
-      "imageUrl": BulldozerImg,
+      "imageUrl": Images.BulldozerImg,
       "videoUrl": null,
-      "parallaxAsset": BulldozerImg,
+      "parallaxAsset": Images.BulldozerImg,
       "showInHomepage": true,
       "featured": false,
       "durationDays": 10,
@@ -463,16 +415,10 @@ export const machines: Machine[] =
       "longDescription": "محاكي الممهدة (Motor Grader)  هو أداة تدريب مصممة للمبتدئين والمشغلين ذوي الخبرة. يركز التدريب على المناورات المعقدة، وإدارة آليات المفصل، والعمل في التضاريس الوعرة، والعمل مع شاحنة قلابة. يتميز المحاكي بمنصة ديناميكية، وشاشة 4K UHD، ووحدات تحكم طبق الأصل، ويوفر قياساً دقيقاً لمهارات السائقين مثل دقة التسوية والتمهيد.",
       "simulatorType": "Other",
       "audience": "Professional",
-      "imageUrl": MotorGraderImg,
-      "gallery": [
-        "/assets/images/gallery-machines/motor-grader-gallery_1.jpg",
-        "/assets/images/gallery-machines/motor-grader-gallery_2.jpg",
-        "/assets/images/gallery-machines/motor-grader-gallery_3.jpg",
-        "/assets/images/gallery-machines/motor-grader-gallery_4.jpg",
-        "/assets/images/gallery-machines/motor-grader-gallery_5.jpg",
-      ],
+      "imageUrl": Images.MotorGraderImg,
+      "gallery": Images.MotorGraderGallery,
       "videoUrl": null,
-      "parallaxAsset": MotorGraderImg,
+      "parallaxAsset": Images.MotorGraderImg,
       "showInHomepage": false,
       "featured": false,
       "durationDays": 10,
@@ -498,16 +444,10 @@ export const machines: Machine[] =
       "longDescription": "محاكي الرافعة الشوكية CHARLIE™ هو حل تدريبي متكامل يشمل وحدات للرافعة الشوكية المتوازنة (Counterbalance) ورافعة الوصول (Reach Truck). تم تطويره بالتعاون مع خبراء السلامة واللوجستيات، ويركز على المناورات المعقدة، والتعامل مع العوائق، والوقاية من المخاطر، والقيادة في الممرات الضيقة. يتميز المحاكي بشاشات أمامية وخلفية، ونظام اهتزاز، وخيار خوذة الواقع الافتراضي (VR) لتعزيز الانغماس.",
       "simulatorType": "Other",
       "audience": "Professional",
-      "imageUrl": ForkliftImg,
-      "gallery": [
-        "/assets/images/gallery-machines/forklift-gallery_1.png",
-        "/assets/images/gallery-machines/forklift-gallery_2.png",
-        "/assets/images/gallery-machines/forklift-gallery_3.png",
-        "/assets/images/gallery-machines/forklift-gallery_4.png",
-        "/assets/images/gallery-machines/forklift-gallery_5.png",
-      ],
+      "imageUrl": Images.ForkliftImg,
+      "gallery": Images.ForkliftGallery,
       "videoUrl": null,
-      "parallaxAsset": ForkliftImg,
+      "parallaxAsset": Images.ForkliftImg,
       "showInHomepage": true,
       "featured": true,
       "durationDays": 7,
@@ -530,14 +470,8 @@ export const machines: Machine[] =
       "id": "empty-container",
       "name": "رافعة الحاويات الفارغة",
       "shortDescription": "تدريب عملي على تشغيل رافعات الحاويات الفارغة داخل ساحات التخزين، مع التركيز على التكديس العالي والمناورة الدقيقة.",
-      "imageUrl": EmptyContainerImg,
-      "gallery": [
-        "/assets/images/gallery-machines/empty-container-gallery_1.jpg",
-        "/assets/images/gallery-machines/empty-container-gallery_2.jpg",
-        "/assets/images/gallery-machines/empty-container-gallery_3.jpg",
-        "/assets/images/gallery-machines/empty-container-gallery_4.jpg",
-        "/assets/images/gallery-machines/empty-container-gallery_5.jpg",
-      ],
+      "imageUrl": Images.EmptyContainerImg,
+      "gallery": Images.EmptyContainerGallery,
       "highlight": "دقة الاصطفاف وتثبيت الحاوية عند الارتفاع",
       "longDescription": "احتراف مناولة الحاويات الفارغة في الموانئ الجافة والبحرية. يركز التدريب على سرعة المناولة، التكديس العمودي حتى 7 أو 8 طوابق، ومقاومة تأثير الرياح أثناء العمليات لضمان استقرار الأكداس.",
       "simulatorType": "Other",
@@ -547,14 +481,8 @@ export const machines: Machine[] =
       "id": "mining-shovel",
       "name": "حفّارة منجمية (Shovel)",
       "shortDescription": "تشغيل حفّارات التعدين الكبيرة لاقتلاع ونقل الكتل الصخرية بكفاءة وأمان.",
-      "imageUrl": MiningShovelImg,
-      "gallery": [
-        "/assets/images/gallery-machines/mining-shovel-gallery_1.jpg",
-        "/assets/images/gallery-machines/mining-shovel-gallery_2.jpg",
-        "/assets/images/gallery-machines/mining-shovel-gallery_3.jpg",
-        "/assets/images/gallery-machines/mining-shovel-gallery_4.jpg",
-        "/assets/images/gallery-machines/mining-shovel-gallery_5.jpg",
-      ],
+      "imageUrl": Images.MiningShovelImg,
+      "gallery": Images.MiningShovelGallery,
       "highlight": "التحكم في الذراع والدلو داخل بيئات ضيقة",
       "longDescription": "التخصص في تشغيل حفارات التعدين الكبيرة لاقتلاع ونقل الكتل الصخرية بكفاءة وأمان. يغطي التدريب استراتيجيات التحميل الفعال للشاحنات المنجمية، إدارة واجهة الحفر (Face Management)، وتقليل دورة التحميل لزيادة الإنتاجية.",
       "simulatorType": "FrontShovel",
