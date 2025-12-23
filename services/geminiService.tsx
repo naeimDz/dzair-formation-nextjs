@@ -39,7 +39,7 @@ console.log("DEBUG: API_KEY loaded:", !!API_KEY, "Length:", API_KEY?.length);
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 const model = genAI.getGenerativeModel({
-    model: "gemini-2.0-flash-lite",
+    model: "gemini-2.5-flash-lite",
     systemInstruction: SYSTEM_INSTRUCTION,
 });
 
